@@ -21,10 +21,13 @@ We can also define the actuation elements that we want to use for calculating wo
 `
 If you want to see one specific magnetic actuation element, just set it as **True**. Otherwise, set it as **None**.
 The result in our code example is 
+
 <img src="images/AFW.png" alt="AFW" width="400">
+
 We set the **Bx** at two actuation elements of two magnets that we want to get the workspace.
 
 ---
 ## 2. Compare two method to get the task-feasible workspace
 In `Comparison.py`
+
 <img src="images/Comparison.png" alt="Comparison" width="600">
