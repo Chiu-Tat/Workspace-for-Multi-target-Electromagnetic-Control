@@ -71,8 +71,8 @@ def Plot_Multiple_Hulls(target_points_list, colors=['lightblue', 'lightgreen', '
         #            bbox=dict(boxstyle='round,pad=0.3', facecolor='white', alpha=0.7))
     ax.tick_params(axis='both', which='major', labelsize=20)
     ax.legend(fontsize=20)
-    # ax.set_xlabel('Dimension 1')
-    # ax.set_ylabel('Dimension 2')
+    ax.set_xlabel('Dimension 1', fontsize=20)
+    ax.set_ylabel('Dimension 2', fontsize=20)
     # ax.set_title('Multi-Target Workspaces Comparison')
     plt.show()
 
