@@ -6,11 +6,12 @@ This repository provides reproducible examples for workspace analysis in a 10-co
 
 ## Overview
 
-This codebase includes three representative examples:
+This codebase includes four representative examples:
 
 1. Multi-target actuation-feasible workspace analysis (magnetic field / wrench related constraints).
 2. Task-feasible workspace comparison between affine and interval methods.
 3. A 2-DOF microrobot arm case study for certified workspace computation.
+4. An interactive multi-point rotating-field playground using an Xbox controller to move multiple rotating magnetic-field centers in real time.
 
 Core utility libraries for electromagnetic modeling and set-based analysis are also included:
 
@@ -142,3 +143,23 @@ num_processes = min(mp.cpu_count(), 16)
 
 - On Windows, `Case_study.py` already includes `mp.freeze_support()` for multiprocessing compatibility.
 - If your machine has fewer resources, reduce `num_processes` and increase `eps` to shorten runtime.
+
+## 4) Interactive Multi-point Rotating Field Playground
+
+File: `Multi_point_rotating.py`
+
+This interactive demo uses an Xbox controller (with keyboard fallback) to control the positions of multiple rotating magnetic-field centers in real time.
+
+The simulation computes a shared feasible rotating-field amplitude for all targets and updates coil currents online to best match each target's in-plane rotating-field direction.
+
+Run:
+
+```bash
+python Multi_point_rotating.py
+```
+
+When prompted, enter the number of target points to control.
+
+Example output:
+
+<img src="images/playground.png" alt="Xbox-controlled rotating field playground" width="620">

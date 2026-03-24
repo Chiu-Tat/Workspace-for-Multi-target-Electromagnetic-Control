@@ -439,7 +439,7 @@ def HyperPlaneShiftingMethod(A,Imin,Imax):
         h = 0. 
         for j in range(n_coils):
             if not(j in M[i,:]):
-                lj = np.dot(np.transpose(A[:,j]),n)
+                lj = float(np.dot(np.transpose(A[:,j]), n).squeeze())
                 lj_arr[k,0] = lj
                 k += 1
 
@@ -499,6 +499,75 @@ def ModifiedHyperplaneShiftingMethod(A_hat, Imin, Imax):
     d_vec_hat = d_vec + translation_offset
 
     return N_hat, d_vec_hat
+
+# Create the mapping matrix between the currents and the magnetic field
+# target_points = [{'X': , 'Y': , 'Z': , 'Bx': , 'By': , 'Bz': , 'Bx_dx': , 'Bx_dy': , 'Bx_dz': , 'By_dy': , 'By_dz': }] <<-- the first three are required parameters, the rest are optional depending on the need for workspace analysis
+def Map_I2B(target_points):
+
+    # Initialize the matrix as a zero matrix
+    A = np.zeros((8 * len(target_points), num_coils))
+
+    # Loop over the target points
+    for i, target_point in enumerate(target_points): 
+        X = target_point['X']
+        Y = target_point['Y']
+        Z = target_point['Z']
+
+        # Loop over the coils
+        for j in range(num_coils):
+            # Calculate the magnetic field and its derivatives for a unit current in the j-th coil
+            currents = np.zeros(num_coils)
+            currents[j] = 1
+            Bx_total, By_total, Bz_total, Bx_dx_total, Bx_dy_total, Bx_dz_total, By_dy_total, By_dz_total = calculate_B_and_derivatives(currents, X, Y, Z)
+
+            # Set the corresponding rows in the A matrix
+            A[8*i:8*(i+1), j] = [Bx_total, By_total, Bz_total, Bx_dx_total, Bx_dy_total, Bx_dz_total, By_dy_total, By_dz_total]
+    return A
+
+# Create the extraction matrix between the currents and the magnetic field
+# target_points = [{'X': , 'Y': , 'Z': , 'Bx': , 'By': , 'Bz': , 'Bx_dx': , 'Bx_dy': , 'Bx_dz': , 'By_dy': , 'By_dz': }] <<-- the first three are required parameters, the rest are optional depending on the need for workspace analysis
+def Extract_Map_I2B(target_points):
+    row_selection_matrix = np.zeros((8 * len(target_points), 8 * len(target_points)))
+
+    for i, target_point in enumerate(target_points): 
+        if target_point['Bx'] is not None:
+            row_selection_matrix[8*i, 8*i] = 1
+        if target_point['By'] is not None:
+            row_selection_matrix[8*i+1, 8*i+1] = 1
+        if target_point['Bz'] is not None:
+            row_selection_matrix[8*i+2, 8*i+2] = 1
+        if target_point['Bx_dx'] is not None:
+            row_selection_matrix[8*i+3, 8*i+3] = 1
+        if target_point['Bx_dy'] is not None:
+            row_selection_matrix[8*i+4, 8*i+4] = 1
+        if target_point['Bx_dz'] is not None:
+            row_selection_matrix[8*i+5, 8*i+5] = 1
+        if target_point['By_dy'] is not None:
+            row_selection_matrix[8*i+6, 8*i+6] = 1
+        if target_point['By_dz'] is not None:
+            row_selection_matrix[8*i+7, 8*i+7] = 1
+    return row_selection_matrix[np.sum(row_selection_matrix, axis=1) != 0]
+
+def one_point_rotating_radius(target_points):
+    A = Extract_Map_I2B(target_points) @ Map_I2B(target_points)
+    G, k = HyperPlaneShiftingMethod(A, -15, 15)
+    radius = np.min(k)
+    return radius
+
+def multi_point_rotating_radius(target_points):
+    r_values = []
+    A = Extract_Map_I2B(target_points) @ Map_I2B(target_points)
+    G, k = HyperPlaneShiftingMethod(A, -15, 15)
+    if G.shape[1] % 2 != 0:
+        raise ValueError("Expected an even number of columns in G (Bx/By pairs per target point)")
+
+    for j in range(G.shape[0]):
+        g_row_pairs = G[j, :].reshape(-1, 2)
+        denom = np.sum(np.linalg.norm(g_row_pairs, axis=1))
+        r_val = k[j] / denom
+        r_values.append(r_val)
+    radius = np.min(r_values)
+    return radius
 
 if __name__ == "__main__":
     # Interval example usage
