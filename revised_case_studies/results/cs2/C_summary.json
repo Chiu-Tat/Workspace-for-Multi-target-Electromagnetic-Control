@@ -1,0 +1,50 @@
+{
+ "sphere 1": {
+  "along_route_error_m": {
+   "rmse": 0.0009336406190668298,
+   "mae": 0.0007503684503098457,
+   "p95": 0.0018045351115360776
+  },
+  "off_centerline_m": {
+   "rmse": 0.0018123696614848264,
+   "mae": 0.0016065614461253717,
+   "p95": 0.00249498428920037
+  },
+  "position_error_m": {
+   "rmse": 0.002040312466325936,
+   "mae": 0.0018785348501223487,
+   "p95": 0.0029972832260102417
+  },
+  "final_branch": "ICA",
+  "target_branch": "ICA",
+  "reached_target_branch": true,
+  "final_goal_error_m": 0.0019452066454831917,
+  "wall_contact_fraction": 0.43356643356643354
+ },
+ "sphere 2": {
+  "along_route_error_m": {
+   "rmse": 0.0013133579185346765,
+   "mae": 0.00105201440969014,
+   "p95": 0.0023949890467535127
+  },
+  "off_centerline_m": {
+   "rmse": 0.00101342377198832,
+   "mae": 0.0008598461331093936,
+   "p95": 0.0015698885692626394
+  },
+  "position_error_m": {
+   "rmse": 0.0016380201767007584,
+   "mae": 0.0014600906259312385,
+   "p95": 0.002591953236935493
+  },
+  "final_branch": "ECA",
+  "target_branch": "ECA",
+  "reached_target_branch": true,
+  "final_goal_error_m": 0.0015058772560214385,
+  "wall_contact_fraction": 0.017482517482517484
+ },
+ "min_separation_m": 0.009335250277034718,
+ "saturated_fraction": 0.21328671328671328,
+ "max_field_direction_slack_rel": 2.873549866755,
+ "max_tangent_force_slack_rel": 2.636826067357102
+}

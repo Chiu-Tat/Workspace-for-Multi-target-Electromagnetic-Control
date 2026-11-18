@@ -1,0 +1,437 @@
+{
+  "date": "2026-10-20",
+  "hardware_status": "No new hardware measurements.",
+  "source_sha256": {
+    "revised_case_studies\\cs2_vessel_microspheres\\publication.py": "757897968b911219d9d1cadab1fe9dcbbb4ffe45900b95282c5b51afc5b4db5f",
+    "revised_case_studies\\cs2_vessel_microspheres\\model.py": "9209513a5cc6a86057045d141ee155c885dd49dae1de8ae790f64d1d5ebb9193",
+    "revised_case_studies\\cs2_vessel_microspheres\\tfw.py": "f5a7d96a85c9facd4f786460d2c109d6ae8c9397e6bdf44787fef1f434dbc005",
+    "revised_case_studies\\cs2_vessel_microspheres\\vessel_pair.py": "9cb256b88af6e57aa6362fe07bce5d342ca32c91b7c835bb90efb7de7a971dd0",
+    "revised_case_studies\\cs2_vessel_microspheres\\config.py": "579646df61fba9e86c452dfdb52143656d911ef5e3ad901ae62f4a6aa7ef3e3e",
+    "revised_case_studies\\cs2_vessel_microspheres\\cad\\validation.json": "895de78cea107c75ecf4e5d442dfb59e114b228fe9b54879778dbb59e723f56b",
+    "revised_case_studies\\cs2_vessel_microspheres\\export_step.py": "013f1fbab22ade24806850ee99772583f32012df5ae388cbf3c394c928260400",
+    "revised_case_studies\\results\\cs2\\tfw_branched_side_by_side.json": "d2ce64c636c9240f27d2079363068d3813d2ccf0261ae4949af17e2db69b821e",
+    "revised_case_studies\\results\\cs2\\plan_branched_side_by_side.json": "54d430b78e3022b047796bbbeeaf4f7ad20230e89076ac6f62d46fff53976cab",
+    "cases\\case_7_vessel_microspheres\\geometries\\branched_parallel.json": "5b04293b3611a0b52b6dfacd2f260ddaa77927b3b6fe6514a96517370120cc1d",
+    "revised_case_studies\\cs2_vessel_microspheres\\cad\\cs2_branched_side_by_side.step": "46a4c586b74e32137cd70124bb2dd27245d01a2015b78bf96bb50f0bf7847f07",
+    "revised_case_studies\\results\\cs2\\tfw_branched_over_under.json": "57bf85dd480789aefb70973633360b7aca2319caaf56c4ff1cd572619281bf2f",
+    "revised_case_studies\\results\\cs2\\plan_branched_over_under.json": "a2dff4563e42805a4d2eebaa8d1c0c7e5a510ae6feac09a8afdc9d569ea7f99f",
+    "cases\\case_7_vessel_microspheres\\geometries\\branched_crossing.json": "c7dcea1cbc3b4effdb931a5b191ddbe00aebc13603f5602b6037e0eb9da02949",
+    "revised_case_studies\\cs2_vessel_microspheres\\cad\\cs2_branched_over_under.step": "b8bf01c0c0b604051a216d49d34f5cd5407fd597a9eb9b4d2f71c12db0f77eda"
+  },
+  "geometry_variants": {
+    "side_by_side": "branched_side_by_side",
+    "over_under": "branched_over_under"
+  },
+  "geometry_rendering": {
+    "updated": "2026-10-12",
+    "source": "Validated hollow-pipe STEP assemblies",
+    "projection": "orthographic",
+    "elevation_degrees": 28,
+    "azimuth_degrees": -65,
+    "depth_exaggeration": 1,
+    "coordinates": "mm relative to the coil-array centre",
+    "surface_raster_dpi": 450,
+    "scale_bar_mm": 10,
+    "orientation_triad": "x, y, z",
+    "paired_views": "3D and top (+z) views from the same hollow CAD pipe solids",
+    "top_view": "Equal x/y scaling, mm axes; no perspective foreshortening",
+    "trunk_arc_lengths_mm": {
+      "side_by_side": [
+        100.73421158263825,
+        100.01515195974932
+      ],
+      "over_under": [
+        102.34851547316839,
+        102.54125421651776
+      ]
+    },
+    "uniform_scaling": {
+      "side_by_side": {
+        "factor_from_original": 1.7214666896197928,
+        "original_y_extent_mm": 58.089999999992,
+        "target_y_extent_mm": 100,
+        "scaled_quantities": "All local x/y/z dimensions, lumen radii, waviness and bulb amplitudes; registration origin is a placement coordinate."
+      },
+      "over_under": {
+        "factor_from_original": 1.9197542714534015,
+        "original_y_extent_mm": 52.089999999995996,
+        "target_y_extent_mm": 100,
+        "scaled_quantities": "All local x/y/z dimensions, lumen radii, waviness and bulb amplitudes; registration origin is a placement coordinate."
+      }
+    },
+    "main_trunk_pipe": {
+      "side_by_side": {
+        "outer_diameter_mm": 8.0,
+        "inner_diameter_mm": 4.0,
+        "wall_thickness_mm": 2.0,
+        "ends": "Flat annular faces; both main-trunk bores open at both ends.",
+        "side_branches": "Retain previous exterior sizes; no separate side-branch bores are requested.",
+        "separation_axis": 0,
+        "additional_network_separation_mm": 3.925394550689136,
+        "outer_separating_slab_gap_mm": 1.0,
+        "simulation_radius": "Main-trunk radius fields represent the 2 mm inner lumen radius."
+      },
+      "over_under": {
+        "outer_diameter_mm": 8.0,
+        "inner_diameter_mm": 4.0,
+        "wall_thickness_mm": 2.0,
+        "ends": "Flat annular faces; both main-trunk bores open at both ends.",
+        "side_branches": "Retain previous exterior sizes; no separate side-branch bores are requested.",
+        "separation_axis": 2,
+        "additional_network_separation_mm": 4.584565175657176,
+        "outer_separating_slab_gap_mm": 1.0,
+        "simulation_radius": "Main-trunk radius fields represent the 2 mm inner lumen radius."
+      }
+    },
+    "sphere_markers": "Top views to scale (3 mm); 3D-view markers schematic"
+  },
+  "map_audit": {
+    "side_by_side": {
+      "inside_samples": 96,
+      "inside_point_contradictions": 0,
+      "maximum_scaled_matrix_difference": 3.552713678800501e-15,
+      "maximum_scaled_offset_difference": 2.4868995751603507e-14,
+      "scope": "Numerical consistency, not continuous enclosure verification or hardware validation."
+    },
+    "over_under": {
+      "inside_samples": 96,
+      "inside_point_contradictions": 0,
+      "maximum_scaled_matrix_difference": 2.6645352591003757e-15,
+      "maximum_scaled_offset_difference": 3.9968028886505635e-15,
+      "scope": "Numerical consistency, not continuous enclosure verification or hardware validation."
+    }
+  },
+  "force_margin_consistency": {
+    "side_by_side": {
+      "grid_points": 4225,
+      "disagreements_with_pointwise_LP": 0,
+      "minimum": 0.0,
+      "fraction_below_one": 0.39479289940828405
+    },
+    "over_under": {
+      "grid_points": 4225,
+      "disagreements_with_pointwise_LP": 0,
+      "minimum": 0.0,
+      "fraction_below_one": 0.2556213017751479
+    }
+  },
+  "allocator_validation": {
+    "time_s": 35.300000000000004,
+    "pose_a": [
+      0.048597333491126236,
+      0.05937889037262388
+    ],
+    "results": [
+      {
+        "condition": "recorded_motion_command",
+        "force_command_N": [
+          0.00029457571290368193,
+          -0.0004599773462487189
+        ],
+        "command_class": "infeasible",
+        "scaled_force_residual": 0.5572264546794202,
+        "maximum_field_error_T": 3.469446951953614e-18,
+        "maximum_transverse_component_N": 0.0009999999999959698,
+        "solver_status": "optimal"
+      },
+      {
+        "condition": "unattainable_task_corner",
+        "force_command_N": [
+          0.0005,
+          -0.0005
+        ],
+        "command_class": "infeasible",
+        "scaled_force_residual": 0.9757511316829275,
+        "maximum_field_error_T": 6.227657278756737e-16,
+        "maximum_transverse_component_N": 0.0009999999998848038,
+        "solver_status": "optimal"
+      }
+    ],
+    "logged_pose_full_task_class": "infeasible",
+    "probe_force_scale": 1.0,
+    "scope": "Numerical allocator behavior at a logged direct-arm pose; the recorded command may itself be LP-infeasible there. Not hardware validation."
+  },
+  "settings": {
+    "field_T": 0.005,
+    "moment_A_m2": 0.013387500000000002,
+    "sphere_radius_m": 0.0015,
+    "material": "N35 NdFeB",
+    "remanence_T": 1.19,
+    "buoyant_weight_N": 0.0008855076051180263,
+    "gravity": "-z of the eMNS frame",
+    "wall_friction_coefficient": 0.2,
+    "viscosity_Pa_s": 0.0054,
+    "drag_N_s_m": 0.00015268140296446396,
+    "wall_drag_factor": 31.93311660288748,
+    "wall_drag_N_s_m": 0.004875593043956678,
+    "flow_m_s": 0,
+    "task_force_interval_N": [
+      -0.0005,
+      0.0005
+    ],
+    "transverse_component_bound_N": 0.001,
+    "current_bound_A": 15.0,
+    "control_period_s": 0.1,
+    "plant_period_s": 0.005,
+    "feedback_gain_per_s": 2.0,
+    "command_velocity_cap_m_s": 0.008,
+    "friction_feedforward_smoothing_m_s": 0.0002,
+    "qp_current_penalty": 1e-07,
+    "hard_constraints": "Both total fields equal 5 mT along +y; all four transverse components bounded; currents bounded.",
+    "soft_outputs": "Only the two tangential commands; independent LPs diagnose infeasibility.",
+    "plant": "Quasi-static centreline sliding: stick while |magnetic + weight tangential force| <= mu N, otherwise wall-corrected Stokes drag; N from weight and magnetic side force; mutual aligned moments iterated six times; zero-order-held current.",
+    "task_basis": "F_max >= mu (W + sqrt(2) F_side) + wall-corrected drag at 3 mm/s."
+  },
+  "summary": {
+    "side_by_side": {
+      "coordinated": {
+        "reference_duration_s": 54.34630208333334,
+        "recorded_duration_s": 56.400000000000006,
+        "active_interval_s": [
+          0,
+          54.300000000000004
+        ],
+        "position_rmse_mm": [
+          0.21426121755950267,
+          0.23273814153724745
+        ],
+        "final_goal_error_mm": [
+          0.20838332069057774,
+          0.1930024650289297
+        ],
+        "completed": true,
+        "model_in_sample_fraction": 1.0,
+        "full_task_infeasible_samples": 0,
+        "command_infeasible_samples": 0,
+        "active_samples": 544,
+        "peak_current_A": 5.127333412060463,
+        "saturated_sample_fraction": 0.0,
+        "minimum_separation_mm": 21.44589171801253,
+        "maximum_allocated_field_error_T": 3.469446951953614e-18,
+        "maximum_allocated_transverse_component_N": 0.0008711195225205561,
+        "maximum_scaled_force_residual": 3.4757252283546447e-06,
+        "maximum_normal_load_N": 0.0018756247078596524,
+        "clipped_command_samples": 0,
+        "abort": null,
+        "between_updates": {
+          "maximum_field_error_T": 2.1046214559350872e-05,
+          "maximum_transverse_component_N": 0.0008711195225205562,
+          "minimum_alignment_cosine": 0.9999911483520991,
+          "minimum_separation_m": 0.02144589171801253,
+          "maximum_normal_load_N": 0.0018756247078596524
+        },
+        "max_reference_speed_m_s": [
+          0.0029999937271344675,
+          0.0029999972101807655
+        ],
+        "max_reference_acceleration_m_s2": [
+          0.0005486704455586982,
+          0.0009077774620847087
+        ],
+        "reference_samples": 1093,
+        "reference_model_in_fraction": 1.0
+      },
+      "direct": {
+        "reference_duration_s": 54.34630208333334,
+        "recorded_duration_s": 56.400000000000006,
+        "active_interval_s": [
+          0,
+          54.300000000000004
+        ],
+        "position_rmse_mm": [
+          19.00664100974927,
+          28.48300914356414
+        ],
+        "final_goal_error_mm": [
+          34.02766650887375,
+          51.25389037262387
+        ],
+        "completed": false,
+        "model_in_sample_fraction": 0.18933823529411764,
+        "full_task_infeasible_samples": 402,
+        "command_infeasible_samples": 302,
+        "active_samples": 544,
+        "peak_current_A": 4.9155825068756975,
+        "saturated_sample_fraction": 0.0,
+        "minimum_separation_mm": 15.187333690697814,
+        "maximum_allocated_field_error_T": 1.1882855810441129e-16,
+        "maximum_allocated_transverse_component_N": 0.0009999999999941451,
+        "maximum_scaled_force_residual": 0.5572264547590503,
+        "maximum_normal_load_N": 0.00213425990095681,
+        "clipped_command_samples": 0,
+        "abort": null,
+        "between_updates": {
+          "maximum_field_error_T": 1.749700924574913e-05,
+          "maximum_transverse_component_N": 0.0010366400816982481,
+          "minimum_alignment_cosine": 0.9999931386013097,
+          "minimum_separation_m": 0.015187333690697814,
+          "maximum_normal_load_N": 0.00213425990095681
+        },
+        "max_reference_speed_m_s": [
+          0.001880301665915738,
+          0.002898079631870052
+        ],
+        "max_reference_acceleration_m_s2": [
+          0.00010653573596085767,
+          0.0001642018682811546
+        ],
+        "reference_samples": 2175,
+        "reference_model_in_fraction": 0.3986206896551724
+      }
+    },
+    "over_under": {
+      "coordinated": {
+        "reference_duration_s": 53.906250539062505,
+        "recorded_duration_s": 56.0,
+        "active_interval_s": [
+          0,
+          53.900000000000006
+        ],
+        "position_rmse_mm": [
+          0.2950894719991116,
+          0.29915228121127535
+        ],
+        "final_goal_error_mm": [
+          0.20433800456921836,
+          0.24692500092356184
+        ],
+        "completed": true,
+        "model_in_sample_fraction": 1.0,
+        "full_task_infeasible_samples": 0,
+        "command_infeasible_samples": 0,
+        "active_samples": 540,
+        "peak_current_A": 3.2641792640901195,
+        "saturated_sample_fraction": 0.0,
+        "minimum_separation_mm": 18.684222739792883,
+        "maximum_allocated_field_error_T": 2.6020852139652106e-18,
+        "maximum_allocated_transverse_component_N": 0.000999077078689516,
+        "maximum_scaled_force_residual": 8.585300858065796e-07,
+        "maximum_normal_load_N": 0.0017600793762275989,
+        "clipped_command_samples": 0,
+        "abort": null,
+        "between_updates": {
+          "maximum_field_error_T": 3.0301245069553525e-05,
+          "maximum_transverse_component_N": 0.0009990770786895162,
+          "minimum_alignment_cosine": 0.9999800454108723,
+          "minimum_separation_m": 0.018684222739792884,
+          "maximum_normal_load_N": 0.0017600793762275989
+        },
+        "max_reference_speed_m_s": [
+          0.0028226228231395716,
+          0.0028226362314753
+        ],
+        "max_reference_acceleration_m_s2": [
+          0.0013269682852445968,
+          0.00034276130778030354
+        ],
+        "reference_samples": 1021,
+        "reference_model_in_fraction": 1.0
+      },
+      "direct": {
+        "reference_duration_s": 53.906250539062505,
+        "recorded_duration_s": 56.0,
+        "active_interval_s": [
+          0,
+          53.900000000000006
+        ],
+        "position_rmse_mm": [
+          19.828577053317666,
+          30.361518827449192
+        ],
+        "final_goal_error_mm": [
+          35.29132559148272,
+          54.228922816578105
+        ],
+        "completed": false,
+        "model_in_sample_fraction": 0.35555555555555557,
+        "full_task_infeasible_samples": 313,
+        "command_infeasible_samples": 304,
+        "active_samples": 540,
+        "peak_current_A": 2.1891365868242487,
+        "saturated_sample_fraction": 0.0,
+        "minimum_separation_mm": 15.87405594778282,
+        "maximum_allocated_field_error_T": 5.2583805365546965e-17,
+        "maximum_allocated_transverse_component_N": 0.0009999999997666528,
+        "maximum_scaled_force_residual": 0.24233758497462907,
+        "maximum_normal_load_N": 0.0021340438821267293,
+        "clipped_command_samples": 0,
+        "abort": null,
+        "between_updates": {
+          "maximum_field_error_T": 1.581775482746052e-05,
+          "maximum_transverse_component_N": 0.0010315559468422949,
+          "minimum_alignment_cosine": 0.9999924335329581,
+          "minimum_separation_m": 0.01587405594778282,
+          "maximum_normal_load_N": 0.0021544981262293468
+        },
+        "max_reference_speed_m_s": [
+          0.0019217388358562298,
+          0.0029999995401378586
+        ],
+        "max_reference_acceleration_m_s2": [
+          0.00010977237848103764,
+          0.000171364120274116
+        ],
+        "reference_samples": 2158,
+        "reference_model_in_fraction": 0.7919369786839666
+      }
+    }
+  },
+  "independent_summary": {
+    "reference_duration_s": 11.000000000000014,
+    "recorded_duration_s": 13.100000000000001,
+    "active_interval_s": [
+      0,
+      11.0
+    ],
+    "position_rmse_mm": [
+      0.09821550262439707,
+      0.05416544120756693
+    ],
+    "final_goal_error_mm": [
+      0.11433148334848153,
+      0.08318499339138308
+    ],
+    "completed": true,
+    "model_in_sample_fraction": 1.0,
+    "full_task_infeasible_samples": 0,
+    "command_infeasible_samples": 0,
+    "active_samples": 111,
+    "peak_current_A": 1.4863736325263988,
+    "saturated_sample_fraction": 0.0,
+    "minimum_separation_mm": 58.32599864446179,
+    "maximum_allocated_field_error_T": 3.469446951953614e-18,
+    "maximum_allocated_transverse_component_N": 0.0007329589218164808,
+    "maximum_scaled_force_residual": 4.989436169898661e-07,
+    "maximum_normal_load_N": 0.0017630205200419705,
+    "clipped_command_samples": 0,
+    "abort": null,
+    "between_updates": {
+      "maximum_field_error_T": 9.5226105066576e-06,
+      "maximum_transverse_component_N": 0.0007329589218164807,
+      "minimum_alignment_cosine": 0.9999968266981084,
+      "minimum_separation_m": 0.05832599864446179,
+      "maximum_normal_load_N": 0.0017630205200419705
+    },
+    "max_reference_speed_m_s": [
+      0.0018748046966553312,
+      0.0018748046966554366
+    ],
+    "max_reference_acceleration_m_s2": [
+      0.0014431713867279659,
+      0.0014431713867278635
+    ],
+    "reference_samples": 441,
+    "reference_model_in_fraction": 1.0,
+    "sphere2_hold_error_mm": 0.0,
+    "sphere1_hold_error_mm": 0.11433148334848153
+  },
+  "limitations": [
+    "Illustrative material and dynamics; no physical validation.",
+    "Stored nominal maps use box-centre force frames with a 5-degree tangent refinement criterion; varying frames are not fully enclosed.",
+    "Floating-point certificates lack outward rounding; Model-in is a nominal planning restriction.",
+    "Hard output constraints hold at allocation updates; inter-update deviations are logged separately.",
+    "Centreline support reacts transverse loads; lateral motion and rolling are not simulated; friction coefficient and remanence are nominal, not measured.",
+    "Area fractions are in Bezier parameter coordinates, not physical-area or arc-length measure.",
+    "One deterministic run per arm; equal endpoints, duration, and motion bounds within each geometry."
+  ]
+}

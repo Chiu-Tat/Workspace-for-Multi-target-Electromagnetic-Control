@@ -1,0 +1,26 @@
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.023s
+
+OK
+ok   test_active_coil_indices_reduce_current_dimension
+ok   test_affine_backend_trailing_column_is_dropped
+ok   test_baseline_modes_only_use_original_certificates
+ok   test_bisect_box_generalises_to_three_dimensions
+ok   test_bisect_box_partitions_area_exactly
+ok   test_coil_models_are_synchronised
+ok   test_eps_must_be_positive
+ok   test_hybrid_never_weaker_than_affine_baseline
+ok   test_hybrid_resolves_at_least_as_much_area
+ok   test_keep_boxes_false_drops_geometry
+ok   test_make_box_accepts_interval_objects
+ok   test_make_box_rejects_inverted_axis
+ok   test_make_box_roundtrip
+ok   test_modes_registered
+ok   test_problem_derived_quantities
+ok   test_problem_rejects_bad_current_bounds
+ok   test_problem_rejects_bad_task_box
+ok   test_report_is_consistent
+ok   test_unknown_mode_rejected
+
+19/19 passed

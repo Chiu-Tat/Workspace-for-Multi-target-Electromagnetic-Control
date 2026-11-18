@@ -1,0 +1,26 @@
+{
+ "planned (in TFW)": {
+  "position_error_m": {
+   "rmse": 0.00017789828480726643,
+   "mae": 0.00014757136608672245,
+   "p95": 0.00032851929283402216
+  },
+  "final_goal_error_m": 0.0004086160975372252,
+  "max_slack": 0.00019285656716883505,
+  "saturated_fraction": 0.0,
+  "min_separation_m": 0.02248479323673564,
+  "contact": false
+ },
+ "straight (interaction ignored)": {
+  "position_error_m": {
+   "rmse": 0.023949174361336666,
+   "mae": 0.016517957180233526,
+   "p95": 0.048683698577149444
+  },
+  "final_goal_error_m": 0.053147779274829866,
+  "max_slack": 1.3145591150546727,
+  "saturated_fraction": 0.6824644549763034,
+  "min_separation_m": 0.008547878412843832,
+  "contact": true
+ }
+}

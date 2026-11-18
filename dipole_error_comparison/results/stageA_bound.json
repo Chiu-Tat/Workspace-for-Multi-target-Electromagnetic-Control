@@ -1,0 +1,51 @@
+{
+ "convergence_radius_mm": 11.297002008617921,
+ "thresholds_mm": {
+  "L1": {
+   "force<=10 mN": 26.9,
+   "force<=5 mN": 29.9,
+   "force<=1 mN": 38.5,
+   "field<=1 mT": 25.4
+  },
+  "L3": {
+   "force<=10 mN": 21.6,
+   "force<=5 mN": 23.2,
+   "force<=1 mN": 27.6,
+   "field<=1 mT": 20.3
+  },
+  "L5": {
+   "force<=10 mN": 18.9,
+   "force<=5 mN": 19.9,
+   "force<=1 mN": 22.7,
+   "field<=1 mT": 17.9
+  },
+  "L7": {
+   "force<=10 mN": 17.3,
+   "force<=5 mN": 18.0,
+   "force<=1 mN": 20.0,
+   "field<=1 mT": 16.6
+  }
+ },
+ "coverage_on_stageA_grid": {
+  "L1": {
+   "violations": 0,
+   "max_ratio_field": 0.29045195139430735,
+   "max_ratio_force": 0.4705245208684777
+  },
+  "L3": {
+   "violations": 0,
+   "max_ratio_field": 0.07835100399598979,
+   "max_ratio_force": 0.16693421225619037
+  },
+  "L5": {
+   "violations": 0,
+   "max_ratio_field": 0.013455066766452533,
+   "max_ratio_force": 0.033359958673087324
+  },
+  "L7": {
+   "violations": 0,
+   "max_ratio_field": 0.0402426385124328,
+   "max_ratio_force": 0.10473168506975987
+  }
+ }
+}

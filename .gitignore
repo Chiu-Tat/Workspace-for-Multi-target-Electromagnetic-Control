@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.matplotlib/
+.mplconfig/
+*.checkpoint.jsonl
+Results/*.checkpoint.json*
+*.log

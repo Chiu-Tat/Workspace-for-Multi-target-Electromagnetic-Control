@@ -1,0 +1,11 @@
+{
+  "grid_points_per_axis": 61,
+  "x_limits_m": [-0.05, 0.05],
+  "y_limits_m": [-0.05, 0.05],
+  "moving_heading_rad": 1.5707963267948966,
+  "current_limit_A": 15.0,
+  "reference_quadrature": {"radial": 4, "azimuthal": 16, "axial": 5},
+  "geometry_scope": "illustrative_not_measured",
+  "moving_cylinder": {"length_m": 0.009, "diameter_m": 0.005},
+  "fixed_cylinder": {"length_m": 0.011, "diameter_m": 0.0055}
+}

@@ -1,0 +1,212 @@
+{
+  "case_2": {
+    "source": "/mnt/e/CUHK/Research/Reconfigurable surgical robot document/Modeling/Case_2/magnet_positions_recorded.csv",
+    "scope": "one recorded run; sample statistics are not a repeated-trial success rate",
+    "sampling": {
+      "n_samples": 215,
+      "duration_s": 21.49638795852661,
+      "median_period_s": 0.1000969409942627,
+      "median_rate_hz": 9.990315289028837
+    },
+    "magnet_1_y_mm": {
+      "n_samples": 215,
+      "mae": 2.279581396533639,
+      "rmse": 3.3539698780946043,
+      "p95_absolute": 7.865825243439959,
+      "max_absolute": 13.204648708365466
+    },
+    "magnet_2_y_mm": {
+      "n_samples": 215,
+      "mae": 4.07180826214543,
+      "rmse": 5.436651304097021,
+      "p95_absolute": 11.60590383772077,
+      "max_absolute": 16.568117721215295
+    },
+    "joint_two_axis_error_mm": {
+      "n_samples": 215,
+      "mae": 5.232784763780516,
+      "rmse": 6.387980224257568,
+      "p95_absolute": 12.28510192480891,
+      "max_absolute": 16.574251567723508
+    },
+    "samples_both_within_5_mm_percent": 63.25581395348837
+  },
+  "case_6": {
+    "source": "/mnt/e/CUHK/Research/Reconfigurable surgical robot document/Modeling/Case_6/closed_loop_results.csv",
+    "scope": "one recorded run; sample statistics are not a repeated-trial success rate",
+    "full_record": {
+      "sampling": {
+        "n_samples": 370,
+        "duration_s": 36.945029735565186,
+        "median_period_s": 0.10012078285217285,
+        "median_rate_hz": 9.987936285680947
+      },
+      "x_error_mm": {
+        "n_samples": 370,
+        "mae": 1.7248395178160236,
+        "rmse": 2.8586860809441967,
+        "p95_absolute": 5.448385112546028,
+        "max_absolute": 12.062987721574252
+      },
+      "y_error_mm": {
+        "n_samples": 370,
+        "mae": 9.653761715364638,
+        "rmse": 10.834934363870591,
+        "p95_absolute": 13.516000000007224,
+        "max_absolute": 20.6869620217184
+      },
+      "position_error_mm": {
+        "n_samples": 370,
+        "mae": 10.388295473034463,
+        "rmse": 11.205707866028272,
+        "p95_absolute": 13.519153819680994,
+        "max_absolute": 23.947151614730103
+      },
+      "orientation_error_deg": {
+        "n_samples": 370,
+        "mae": 9.028784926946265,
+        "rmse": 13.375870863255175,
+        "p95_absolute": 32.80954519624272,
+        "max_absolute": 43.89552654581544
+      },
+      "samples_within_5_mm_and_15_deg_percent": 0.0
+    },
+    "active_reference_interval": {
+      "definition": "from the first recorded change in desired pose through the end of the record",
+      "start_time_s": 22.02700161933899,
+      "sampling": {
+        "n_samples": 150,
+        "duration_s": 14.918052673339844,
+        "median_period_s": 0.10012483596801758,
+        "median_rate_hz": 9.987531967786948
+      },
+      "x_error_mm": {
+        "n_samples": 150,
+        "mae": 3.673750810612953,
+        "rmse": 4.414672773431888,
+        "p95_absolute": 9.195487721574228,
+        "max_absolute": 12.062987721574252
+      },
+      "y_error_mm": {
+        "n_samples": 150,
+        "mae": 4.4124988978888435,
+        "rmse": 5.590978346485204,
+        "p95_absolute": 11.795212021718372,
+        "max_absolute": 20.6869620217184
+      },
+      "position_error_mm": {
+        "n_samples": 150,
+        "mae": 6.201789946238852,
+        "rmse": 7.123789340466717,
+        "p95_absolute": 14.677631190523874,
+        "max_absolute": 23.947151614730103
+      },
+      "orientation_error_deg": {
+        "n_samples": 150,
+        "mae": 16.396602819900856,
+        "rmse": 19.89946315855403,
+        "p95_absolute": 38.27700335745834,
+        "max_absolute": 43.89552654581544
+      },
+      "samples_within_5_mm_and_15_deg_percent": 0.0
+    },
+    "legacy_figure_window": {
+      "definition": "the manually cropped interval used by the existing Case_6/plot_final_results.py",
+      "warning": "reported for auditability only; it must not replace the full or pre-declared active-interval result",
+      "sampling": {
+        "n_samples": 124,
+        "duration_s": 12.314904689788818,
+        "median_period_s": 0.10012388229370117,
+        "median_rate_hz": 9.987627098464102
+      },
+      "x_error_mm": {
+        "n_samples": 124,
+        "mae": 3.267353463602735,
+        "rmse": 3.7229367838026075,
+        "p95_absolute": 5.5216089336649175,
+        "max_absolute": 9.856987721574253
+      },
+      "y_error_mm": {
+        "n_samples": 124,
+        "mae": 3.6294220684926652,
+        "rmse": 4.21983691360459,
+        "p95_absolute": 5.182100313010117,
+        "max_absolute": 17.697962021718403
+      },
+      "position_error_mm": {
+        "n_samples": 124,
+        "mae": 5.396182276442404,
+        "rmse": 5.627369001017296,
+        "p95_absolute": 5.820038199055477,
+        "max_absolute": 20.257790271040236
+      },
+      "orientation_error_deg": {
+        "n_samples": 124,
+        "mae": 16.919749505767186,
+        "rmse": 20.57863300958602,
+        "p95_absolute": 38.59754163968454,
+        "max_absolute": 43.89552654581544
+      },
+      "samples_within_5_mm_and_15_deg_percent": 0.0
+    }
+  },
+  "coil_model": {
+    "source": "/mnt/e/CUHK/Research/Reconfigurable surgical robot document/Modeling/10 coil data 3D/coil1_to_10_model_accuracy_summary.csv",
+    "n_coils": 10,
+    "samples_per_coil": 477,
+    "test_points_per_coil": 117,
+    "mean_vector_error_mT_across_coils": 0.7464229131817489,
+    "pooled_vector_rmse_mT": 1.0553412509656457,
+    "worst_sample_vector_error_mT": 9.15213105808615,
+    "pooled_bx_rmse_mT": 0.5329464943119684,
+    "pooled_by_rmse_mT": 0.5934639571795097,
+    "pooled_bz_rmse_mT": 0.6910236766704555,
+    "limitation": "coil-field validation does not validate target-target dipole forces at close separation"
+  },
+  "algebraic_checks": {
+    "force_gradient_identity_max_abs_residual": 1.7763568394002505e-15,
+    "product_of_balls_support_identity_max_abs_residual": 8.881784197001252e-16,
+    "resolution_nominal_denominators": [
+      10,
+      15,
+      20,
+      30,
+      40,
+      60,
+      90,
+      120,
+      180
+    ],
+    "resolution_effective_dyadic_depths": [
+      4,
+      4,
+      5,
+      5,
+      6,
+      6,
+      7,
+      7,
+      8
+    ],
+    "resolution_reported_inner_percent": [
+      12.5,
+      12.5,
+      32.42,
+      32.42,
+      46.87,
+      46.87,
+      55.98,
+      61.17,
+      61.17
+    ],
+    "resolution_inner_fraction_monotone": true,
+    "rohn_lp_count_note": "for d selected output equations, the row-sign test has 2^d systems (not 2^number_of_currents)"
+  },
+  "missing_evidence": [
+    "repeated physical trials with a pre-declared trial-level success criterion",
+    "physical tests at configurations certified inside, near, and outside the TFW boundary",
+    "close-range target-target dipole field/force measurements over separation and orientation",
+    "unconstrained simultaneous position-and-orientation control",
+    "step/chirp transient measurements for rise time, settling time, overshoot, and bandwidth"
+  ]
+}

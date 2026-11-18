@@ -1,0 +1,39 @@
+{
+  "network_count": 2,
+  "segments_per_network": {
+    "artery": 7,
+    "vein": 7
+  },
+  "attachment_graphs": "connected acyclic trees",
+  "continuous_gap_lower_bound_mm": 1.7177454045522684,
+  "separating_axis_local": 0,
+  "method": "Scalar cubic extrema expanded by winding-amplitude and radius bounds; ordinary floating-point arithmetic",
+  "note": "Conservative model bound, not an exact minimum, interval-arithmetic certificate, or wall-thickness model.",
+  "mesh_step_mm": 0.2,
+  "display_fairing_max_displacement_mm": 0.06,
+  "meshes": {
+    "artery": {
+      "vertices": 62358,
+      "triangles": 124712,
+      "components": 1,
+      "closed_edges": true,
+      "euler_characteristic": 2,
+      "display_axis_range_mm": [
+        -37.119058133097305,
+        -0.7330994650182368
+      ]
+    },
+    "vein": {
+      "vertices": 45460,
+      "triangles": 90916,
+      "components": 1,
+      "closed_edges": true,
+      "euler_characteristic": 2,
+      "display_axis_range_mm": [
+        1.3104383912657886,
+        37.59283495105977
+      ]
+    }
+  },
+  "display_mesh_separation_lower_bound_mm": 2.0435378562840256
+}

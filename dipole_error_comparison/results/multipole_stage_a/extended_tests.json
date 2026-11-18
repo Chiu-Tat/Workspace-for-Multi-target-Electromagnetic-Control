@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": [
+    "legacy and batch multipole agreement",
+    "field-gradient finite differences",
+    "coil torque virtual rotation",
+    "Gauss moments through degree 13",
+    "quadrature majorant spot check",
+    "64 extreme corners of 8 accepted 3D boxes against independent finite-body reference",
+    "synthetic calibration coefficient recovery (not hardware evidence)"
+  ]
+}

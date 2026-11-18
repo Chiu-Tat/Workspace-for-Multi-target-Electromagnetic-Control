@@ -1,0 +1,71 @@
+{
+  "step_m": 1e-06,
+  "checks": [
+    {
+      "kind": "coil",
+      "pose": [
+        -0.031,
+        0.017,
+        0.076
+      ],
+      "analytic": -0.03804171680562006,
+      "finite_difference": -0.03804171682221871,
+      "relative_error": 4.363276527502069e-10
+    },
+    {
+      "kind": "target",
+      "pose": [
+        -0.031,
+        0.017,
+        0.076
+      ],
+      "analytic": 0.002378548501016292,
+      "finite_difference": 0.002378548539300662,
+      "relative_error": 1.6095685834970016e-08
+    },
+    {
+      "kind": "coil",
+      "pose": [
+        0.043,
+        -0.026,
+        0.089
+      ],
+      "analytic": 0.18167755055381654,
+      "finite_difference": 0.181677550593895,
+      "relative_error": 2.20602205340537e-10
+    },
+    {
+      "kind": "target",
+      "pose": [
+        0.043,
+        -0.026,
+        0.089
+      ],
+      "analytic": -0.05267309284578452,
+      "finite_difference": -0.052673094307509764,
+      "relative_error": 2.7750890032261628e-08
+    },
+    {
+      "kind": "coil",
+      "pose": [
+        -0.012,
+        -0.038,
+        0.081
+      ],
+      "analytic": -0.00610028688945032,
+      "finite_difference": -0.006100286891299114,
+      "relative_error": 3.030668209367828e-10
+    },
+    {
+      "kind": "target",
+      "pose": [
+        -0.012,
+        -0.038,
+        0.081
+      ],
+      "analytic": 0.0027512390078533035,
+      "finite_difference": 0.0027512394661332847,
+      "relative_error": 1.6657218932744869e-07
+    }
+  ]
+}

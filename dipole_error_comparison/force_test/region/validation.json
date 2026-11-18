@@ -1,0 +1,10 @@
+{
+  "random_boxes": 24,
+  "points_per_box": 12,
+  "scalar_affine_residual_checks": 13824,
+  "maximum_remainder_excess": -2.1184188932616832e-08,
+  "L5_independent_point_max_abs_N": 3.760880495917718e-15,
+  "note": "Analytic Taylor remainders plus numerical regression checks. This does not constitute directed-rounding verification.",
+  "partition_area_mm2": 3136.0,
+  "robust_inside_subset_checked": true
+}

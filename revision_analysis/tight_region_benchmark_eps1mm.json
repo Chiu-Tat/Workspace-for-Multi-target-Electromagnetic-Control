@@ -1,0 +1,71 @@
+{
+  "protocol": {
+    "initial_xy_m": [
+      -0.05,
+      0.05
+    ],
+    "z_m": 0.075,
+    "current_A": [
+      -15.0,
+      15.0
+    ],
+    "task_T": [
+      -0.08,
+      0.08
+    ],
+    "eps_m": 0.001,
+    "enclosure": "existing custom affine implementation"
+  },
+  "baseline": {
+    "mode": "baseline",
+    "eps_m": 0.001,
+    "elapsed_s": 11.270389909041114,
+    "iterations": 3869,
+    "counts": {
+      "inside": 2540,
+      "outside": 1,
+      "undetermined": 361
+    },
+    "areas_m2": {
+      "inside": 0.009779052734375002,
+      "outside": 6.103515624999957e-07,
+      "undetermined": 0.00022033691406250007
+    },
+    "area_fractions": {
+      "inside": 0.9779052734375,
+      "outside": 6.103515624999955e-05,
+      "undetermined": 0.022033691406250003
+    },
+    "certificate_counts": {
+      "rohn": 2540,
+      "contractor": 1
+    }
+  },
+  "hybrid": {
+    "mode": "hybrid",
+    "eps_m": 0.001,
+    "elapsed_s": 20.883046730072238,
+    "iterations": 1289,
+    "counts": {
+      "inside": 790,
+      "outside": 1,
+      "undetermined": 176
+    },
+    "areas_m2": {
+      "inside": 0.009891967773437501,
+      "outside": 6.103515624999957e-07,
+      "undetermined": 0.00010742187500000012
+    },
+    "area_fractions": {
+      "inside": 0.9891967773437499,
+      "outside": 6.103515624999955e-05,
+      "undetermined": 0.01074218750000001
+    },
+    "certificate_counts": {
+      "affine_right_inverse": 611,
+      "rohn": 179,
+      "contractor": 1
+    }
+  },
+  "undetermined_area_relative_reduction": 0.5124653739612184
+}

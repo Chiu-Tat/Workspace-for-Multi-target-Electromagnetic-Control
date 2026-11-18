@@ -1,0 +1,703 @@
+{
+  "scope": "Total longitudinal force at logged (x,y,beta_command); total field and zero lateral force enforced.",
+  "reference": "Auxiliary x=8 mm passage, 5 mm/s; different geometry from primary crossing.",
+  "checks": "Command LP matches saved records; commands lie within force intervals; full-task LP matches interval containment.",
+  "simulation_sha256": "2e6f1118330f5787a4b69f6bb0bda233d8001b145edc6fca273b91cf646d935f",
+  "classifier_hash": "a36eadf355996c8f3e5f42407a6990e6e92c08fb32108ec11c22f65e0d86c076",
+  "window_s": [
+    6.0,
+    10.5
+  ],
+  "rows": [
+    {
+      "t": 6.0,
+      "x": 0.00846011768512009,
+      "y": -0.015040415630694349,
+      "beta_command": 1.5799986804972983,
+      "fz_range": [
+        -0.24406714909968424,
+        0.2244048750957202
+      ],
+      "fz_command": 0.025161662522777427,
+      "fz_interaction": 0.0037515237678852247,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 6.1000000000000005,
+      "x": 0.008495702935283744,
+      "y": -0.014556214041429377,
+      "beta_command": 1.5807103855005715,
+      "fz_range": [
+        -0.2465569629425761,
+        0.22378105306634974
+      ],
+      "fz_command": 0.025224856165717374,
+      "fz_interaction": 0.0015604158027495993,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 6.2,
+      "x": 0.008532891648136726,
+      "y": -0.014075007960179667,
+      "beta_command": 1.581454159757631,
+      "fz_range": [
+        -0.24944955928397974,
+        0.22283469467410258
+      ],
+      "fz_command": 0.025300031840718617,
+      "fz_interaction": -0.0010976693474343672,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 6.300000000000001,
+      "x": 0.008571439754752505,
+      "y": -0.01359720193635462,
+      "beta_command": 1.5822251218899466,
+      "fz_range": [
+        -0.2524413048793923,
+        0.221411005994403
+      ],
+      "fz_command": 0.025388807745418445,
+      "fz_interaction": -0.004290575409358746,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 6.4,
+      "x": 0.008610984976794755,
+      "y": -0.013123231249072168,
+      "beta_command": 1.5830160263307917,
+      "fz_range": [
+        -0.25438701133223757,
+        0.21943665158270204
+      ],
+      "fz_command": 0.025492924996288538,
+      "fz_interaction": -0.008091393890488434,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 6.5,
+      "x": 0.00865101389290699,
+      "y": -0.012653553763495053,
+      "beta_command": 1.5838166046530364,
+      "fz_range": [
+        -0.2569351243869274,
+        0.21683084020855053
+      ],
+      "fz_command": 0.025614215053980247,
+      "fz_interaction": -0.012577142839679964,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 6.6000000000000005,
+      "x": 0.008690821584984073,
+      "y": -0.012188635865510288,
+      "beta_command": 1.584612758494578,
+      "fz_range": [
+        -0.26024273868659964,
+        0.21350616154005644
+      ],
+      "fz_command": 0.025754543462041115,
+      "fz_interaction": -0.0178265162857332,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 6.7,
+      "x": 0.008729462787625207,
+      "y": -0.011728929973761591,
+      "beta_command": 1.5853855825474006,
+      "fz_range": [
+        -0.26401244074365454,
+        0.20937039364936788
+      ],
+      "fz_command": 0.02591571989504623,
+      "fz_interaction": -0.023916348635515866,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 6.800000000000001,
+      "x": 0.008765693787898985,
+      "y": -0.011274840263610527,
+      "beta_command": 1.5861102025528762,
+      "fz_range": [
+        -0.2685320546021008,
+        0.20432975285950056
+      ],
+      "fz_command": 0.02609936105444198,
+      "fz_interaction": -0.03091634149432876,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 6.9,
+      "x": 0.00879790520305468,
+      "y": -0.010826672165564356,
+      "beta_command": 1.5867544308559902,
+      "fz_range": [
+        -0.27461382341181945,
+        0.19829423232759957
+      ],
+      "fz_command": 0.026306688662257372,
+      "fz_interaction": -0.03888149836399435,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 7.0,
+      "x": 0.008824047710825985,
+      "y": -0.0103845599775559,
+      "beta_command": 1.5872772810114162,
+      "fz_range": [
+        -0.28256617341892076,
+        0.1908088703233562
+      ],
+      "fz_command": 0.026538239910223457,
+      "fz_interaction": -0.047841628261448915,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 7.1000000000000005,
+      "x": 0.008841556688902104,
+      "y": -0.009948365789312569,
+      "beta_command": 1.5876274605729386,
+      "fz_range": [
+        -0.2927201318106664,
+        0.18210777813872359
+      ],
+      "fz_command": 0.026793463157250227,
+      "fz_interaction": -0.057787264465935816,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 7.2,
+      "x": 0.008847288880859156,
+      "y": -0.009517542494552828,
+      "beta_command": 1.5877421044120796,
+      "fz_range": [
+        -0.3054123796967656,
+        0.1724104823800381
+      ],
+      "fz_command": 0.02707016997821135,
+      "fz_interaction": -0.06865150615204446,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 7.300000000000001,
+      "x": 0.008837496374960646,
+      "y": -0.009090955421680683,
+      "beta_command": 1.5875462542941094,
+      "fz_range": [
+        -0.32095543884912425,
+        0.16177198100640458
+      ],
+      "fz_command": 0.02736382168672252,
+      "fz_interaction": -0.08028782635167775,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 7.4,
+      "x": 0.00880788167076295,
+      "y": -0.008666663946336322,
+      "beta_command": 1.5869539602101557,
+      "fz_range": [
+        -0.3395900525987501,
+        0.15033975539000116
+      ],
+      "fz_command": 0.027666655785345322,
+      "fz_interaction": -0.09244511539640125,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 7.5,
+      "x": 0.008753800813253092,
+      "y": -0.008241681185087458,
+      "beta_command": 1.5858723430599584,
+      "fz_range": [
+        -0.3604373641938235,
+        0.13838698356023055
+      ],
+      "fz_command": 0.027966724740349783,
+      "fz_interaction": -0.10474352529197795,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 7.6000000000000005,
+      "x": 0.008670699754561627,
+      "y": -0.007811762298477432,
+      "beta_command": 1.5842103218861292,
+      "fz_range": [
+        -0.3833140844482666,
+        0.12634333361123595
+      ],
+      "fz_command": 0.02824704919390963,
+      "fz_interaction": -0.11665819836882745,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 7.7,
+      "x": 0.008554857673539555,
+      "y": -0.00737132148857287,
+      "beta_command": 1.5818934802656877,
+      "fz_range": [
+        -0.4084110862333503,
+        0.11481058421205143
+      ],
+      "fz_command": 0.028485285954291478,
+      "fz_interaction": -0.1275219056514479,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 7.800000000000001,
+      "x": 0.008404431148168164,
+      "y": -0.006913628889216793,
+      "beta_command": 1.5788849497582598,
+      "fz_range": [
+        -0.4246581927206268,
+        0.10454468147788859
+      ],
+      "fz_command": 0.028654515556867093,
+      "fz_interaction": -0.1365592948255943,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 7.9,
+      "x": 0.008220618768228972,
+      "y": -0.006431443830461832,
+      "beta_command": 1.575208702159476,
+      "fz_range": [
+        -0.43116799605207534,
+        0.09638727106402264
+      ],
+      "fz_command": 0.02872577532184724,
+      "fz_interaction": -0.1429604236390307,
+      "allocation_pose_task_class": "outside",
+      "actual_pose_task_class": "outside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 8.0,
+      "x": 0.008007716080232642,
+      "y": -0.005918049256891083,
+      "beta_command": 1.5709506483995495,
+      "fz_range": [
+        -0.4342595603350523,
+        0.09093787657579941
+      ],
+      "fz_command": 0.028672197027564635,
+      "fz_interaction": -0.14595568893369937,
+      "allocation_pose_task_class": "outside",
+      "actual_pose_task_class": "outside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 8.1,
+      "x": 0.007774367475254116,
+      "y": -0.005368414011728606,
+      "beta_command": 1.5662836762999788,
+      "fz_range": [
+        -0.4319443104094325,
+        0.08971020677583899
+      ],
+      "fz_command": 0.028473656046914406,
+      "fz_interaction": -0.1449684124746331,
+      "allocation_pose_task_class": "outside",
+      "actual_pose_task_class": "outside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 8.200000000000001,
+      "x": 0.007532911939037621,
+      "y": -0.004781225602108319,
+      "beta_command": 1.5614545655756489,
+      "fz_range": [
+        -0.4073699435061974,
+        0.09393438403747731
+      ],
+      "fz_command": 0.028124902408433773,
+      "fz_interaction": -0.13970994824993888,
+      "allocation_pose_task_class": "outside",
+      "actual_pose_task_class": "outside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 8.3,
+      "x": 0.0072972389517493436,
+      "y": -0.004159066984303182,
+      "beta_command": 1.5567411058298835,
+      "fz_range": [
+        -0.3781941820965548,
+        0.09329144969076411
+      ],
+      "fz_command": 0.02763626793721316,
+      "fz_interaction": -0.13022036463154602,
+      "allocation_pose_task_class": "outside",
+      "actual_pose_task_class": "outside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 8.4,
+      "x": 0.007080303873291097,
+      "y": -0.0035079181555405445,
+      "beta_command": 1.5524024042607185,
+      "fz_range": [
+        -0.3456968575031598,
+        0.09766700592035943
+      ],
+      "fz_command": 0.02703167262216268,
+      "fz_interaction": -0.11682546409800976,
+      "allocation_pose_task_class": "outside",
+      "actual_pose_task_class": "outside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 8.5,
+      "x": 0.006892506059219202,
+      "y": -0.0028359006227207137,
+      "beta_command": 1.5486464479792805,
+      "fz_range": [
+        -0.3113621033446055,
+        0.10684142547703579
+      ],
+      "fz_command": 0.026343602490883095,
+      "fz_interaction": -0.1000632821757782,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 8.6,
+      "x": 0.006740971342936843,
+      "y": -0.002151877863704764,
+      "beta_command": 1.5456157536536335,
+      "fz_range": [
+        -0.2766918258598089,
+        0.11101761734502397
+      ],
+      "fz_command": 0.025607511454819275,
+      "fz_interaction": -0.08059794320637031,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 8.700000000000001,
+      "x": 0.006629629694928114,
+      "y": -0.0014643724413200777,
+      "beta_command": 1.5433889206934588,
+      "fz_range": [
+        -0.24306544846628386,
+        0.12093771223938417
+      ],
+      "fz_command": 0.024857489765280735,
+      "fz_interaction": -0.0591455855157826,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 8.8,
+      "x": 0.0065597410519301815,
+      "y": -0.0007809495814929379,
+      "beta_command": 1.5419911478335002,
+      "fz_range": [
+        -0.21165807910477263,
+        0.13617482802702763
+      ],
+      "fz_command": 0.024123798325972255,
+      "fz_interaction": -0.03642295651284598,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 8.9,
+      "x": 0.0065305432263636125,
+      "y": -0.00010797510609564431,
+      "beta_command": 1.5414071913221687,
+      "fz_range": [
+        -0.1834066877278435,
+        0.1555064956149785
+      ],
+      "fz_command": 0.02343190042438302,
+      "fz_interaction": -0.013116823847186617,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 9.0,
+      "x": 0.006539837649662466,
+      "y": 0.0005494158019665774,
+      "beta_command": 1.5415930797881459,
+      "fz_range": [
+        -0.15900752983573135,
+        0.17902625642806042
+      ],
+      "fz_command": 0.02280233679213375,
+      "fz_interaction": 0.010132795251333837,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 9.1,
+      "x": 0.006584455605930127,
+      "y": 0.001187261494690067,
+      "beta_command": 1.542485438913499,
+      "fz_range": [
+        -0.13893144051972692,
+        0.20624422338778994
+      ],
+      "fz_command": 0.02225095402124013,
+      "fz_interaction": 0.032741854389660215,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 9.200000000000001,
+      "x": 0.006659495035742179,
+      "y": 0.0018015031789061578,
+      "beta_command": 1.5439862275097402,
+      "fz_range": [
+        -0.12353373885918192,
+        0.23517217398257423
+      ],
+      "fz_command": 0.021793987284375878,
+      "fz_interaction": 0.05412233394773172,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 9.3,
+      "x": 0.006759897331800973,
+      "y": 0.0023897321522174156,
+      "beta_command": 1.545994273430916,
+      "fz_range": [
+        -0.1129398093207763,
+        0.2655899876969333
+      ],
+      "fz_command": 0.021441071391130797,
+      "fz_interaction": 0.0737662563400445,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 9.4,
+      "x": 0.006880661005964428,
+      "y": 0.0029508893211545525,
+      "beta_command": 1.5484095469141852,
+      "fz_range": [
+        -0.10708527092993708,
+        0.29673950691922163
+      ],
+      "fz_command": 0.021196442715382287,
+      "fz_interaction": 0.09125682308149938,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 9.5,
+      "x": 0.0070168519356428585,
+      "y": 0.0034847761553428516,
+      "beta_command": 1.5511333655077537,
+      "fz_range": [
+        -0.10576108862450273,
+        0.32788579096050396
+      ],
+      "fz_command": 0.021060895378628836,
+      "fz_interaction": 0.10626288840444903,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 9.600000000000001,
+      "x": 0.00716370894657215,
+      "y": 0.003991997935517962,
+      "beta_command": 1.5540705057263395,
+      "fz_range": [
+        -0.10864107549572555,
+        0.3583307642448629
+      ],
+      "fz_command": 0.02103200825792842,
+      "fz_interaction": 0.11854542861762221,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 9.700000000000001,
+      "x": 0.00731669929237388,
+      "y": 0.004473867187602344,
+      "beta_command": 1.5571303126423741,
+      "fz_range": [
+        -0.11531005499758543,
+        0.38369944228123554
+      ],
+      "fz_command": 0.021104531249591132,
+      "fz_interaction": 0.12795787189031566,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 9.8,
+      "x": 0.007471534997817637,
+      "y": 0.004932292391043241,
+      "beta_command": 1.5602270267512492,
+      "fz_range": [
+        -0.1252883432630544,
+        0.40471052619952785
+      ],
+      "fz_command": 0.02127083043582748,
+      "fz_interaction": 0.13444264820742793,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 9.9,
+      "x": 0.007624674738771039,
+      "y": 0.0053697017386475756,
+      "beta_command": 1.5632898215703173,
+      "fz_range": [
+        -0.13803355351442556,
+        0.42353634453331024
+      ],
+      "fz_command": 0.021521193045409778,
+      "fz_interaction": 0.13804733210346218,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 10.0,
+      "x": 0.007772749289278756,
+      "y": 0.0057888959566077995,
+      "beta_command": 1.5662513125804716,
+      "fz_range": [
+        -0.14644118685361207,
+        0.43001101052419954
+      ],
+      "fz_command": 0.021844416173569168,
+      "fz_interaction": 0.13889099630796042,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 10.100000000000001,
+      "x": 0.007912368856964629,
+      "y": 0.006192958450779316,
+      "beta_command": 1.5690437039341891,
+      "fz_range": [
+        -0.15364173062061082,
+        0.4336075234502902
+      ],
+      "fz_command": 0.022228166196883222,
+      "fz_interaction": 0.13715099880914894,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 10.200000000000001,
+      "x": 0.008040491191968127,
+      "y": 0.006585231210152916,
+      "beta_command": 1.5716061506342591,
+      "fz_range": [
+        -0.16242829581212126,
+        0.43487656903194205
+      ],
+      "fz_command": 0.022659075159388867,
+      "fz_interaction": 0.13307240232959172,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 10.3,
+      "x": 0.008154527297408006,
+      "y": 0.006969252689784147,
+      "beta_command": 1.5738868727430566,
+      "fz_range": [
+        -0.17240695057112293,
+        0.4209415551960821
+      ],
+      "fz_command": 0.023122989240863853,
+      "fz_interaction": 0.1269612239097827,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 10.4,
+      "x": 0.008252460143369318,
+      "y": 0.0073486682859151865,
+      "beta_command": 1.5758455296622829,
+      "fz_range": [
+        -0.17966897144223484,
+        0.3995178297477274
+      ],
+      "fz_command": 0.023605326856339526,
+      "fz_interaction": 0.11917288597898937,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    },
+    {
+      "t": 10.5,
+      "x": 0.008332949236703992,
+      "y": 0.007727108319769154,
+      "beta_command": 1.5774553115289764,
+      "fz_range": [
+        -0.186330560145351,
+        0.37896541632068725
+      ],
+      "fz_command": 0.024091566720923618,
+      "fz_interaction": 0.11009548688575498,
+      "allocation_pose_task_class": "inside",
+      "actual_pose_task_class": "inside",
+      "allocation_command_class": "inside"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Q1/Q3/Q5 surface integral",
+    "L1 dipole/coil recovery",
+    "spatial and rotational energy derivatives",
+    "rotation covariance",
+    "force reciprocity",
+    "angular momentum balance",
+    "C/NumPy reference equivalence",
+    "shrinking body",
+    "tail rational sum",
+    "sampled field/force/torque bound coverage"
+  ],
+  "reference_refinement_max": [
+    4.0460391374091964e-10,
+    3.9357859896518854e-10,
+    9.06191253702282e-08,
+    6.774700511691378e-08
+  ],
+  "L5_error_max": [
+    3.998234929140226e-06,
+    3.339570673181226e-06,
+    0.0004531984484543311,
+    7.814984292334182e-05
+  ]
+}

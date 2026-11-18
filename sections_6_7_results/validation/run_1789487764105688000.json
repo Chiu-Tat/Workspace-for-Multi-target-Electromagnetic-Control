@@ -1,0 +1,49 @@
+{
+  "run_id": "1789487764105688000",
+  "command": [
+    "Workspace_eMNS-main/analysis/sections_67/run.py",
+    "--studies",
+    "6.1,6.2,6.3,7.1,7.2,7.3"
+  ],
+  "python": "3.12.14 (main, Aug 12 2026, 13:57:54) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "machine": "arm64",
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "git_head": "9ffe5363be62a2095f8d172d30613f12288b714a",
+  "source_sha256": {
+    "analysis/sections_67/run.py": "b7698729f5975af344dbb32a29c20ec77013fe86bb530996588b7fa1163497bb",
+    "analysis/sections_67/__init__.py": "7e1443a1c6c5a83a36eaee68d9dad6c7926a61405320fcd5d7847612764bc991",
+    "analysis/sections_67/test_review_regressions.py": "a5821e929ba1b39614f59c7c48dfccaf5e09138726b08d982789653af66b190e",
+    "analysis/sections_67/common.py": "2f3df70129a9e4cdbd6a88226b50d5333a17ab2f625e83f0fa602303e4e5601e",
+    "analysis/sections_67/sec6.py": "7e3d944bfab80c376c622d251d03aa3060aa702e470d43467118d3b38cba6e05",
+    "analysis/sections_67/sec7.py": "8af568ae197c5169f7beb7bc59a42f53e78f63487332217334a4b19f7e179356",
+    "analysis/sections_67/afw_tools.py": "cc794872a0c2f0374ea3c88264e03593e4f8d3dce90e34f62275548c724f87e5",
+    "hybrid_region/_backend.py": "0b79e720cdda0771dfc2c906619ec234939f94c9a4d5dd79bc29eea74178f4a0",
+    "hybrid_region/ablation.py": "2807d62f8ae68caae6c211e085ff859bbb48e55a2f53a84dc416c4aa46c89d45",
+    "hybrid_region/__init__.py": "4afcce5eb3c93a4207d4e312e5bc1cc1b2afd281db2f5ce8feb66d9376b34575",
+    "hybrid_region/boxes.py": "3fc5ff5e695cd362b785e68d75931dc01620893aceddb989cd7337a974e06452",
+    "hybrid_region/certificates.py": "040453698bce9a1a162a247baf75962863b86588261a7af006297dbbdb3e9ec7",
+    "hybrid_region/model.py": "3dc0da6cd139676a87b96eac19d48eb33fa55d13fc17dd96e21f161e62581bee",
+    "hybrid_region/search.py": "0b3297ef640b21f6c875b4c9a334797ee2ab0a58fe1999dd78f31ed811b2d836",
+    "hybrid_region/test_hybrid_region.py": "4156b9f1191d0bea9e08a3cf318dd3ce7e263d832cc06d38fd12e859373d0f34",
+    "hybrid_region/cascade.py": "1e5ed802c4bc946eb57e088abad1b8e34a3abf009c521e28f68cab26a1a8d733",
+    "emns/__init__.py": "d0751ed9f449d38ff8d9b226a67dc86ff808934b28c87cb0db6ce08989b5187d",
+    "emns/workspace/interval.py": "cade5f39727ccf8b8283035e1365b2da468f745ee2adb7894d85480ec82933f2",
+    "emns/workspace/checks.py": "48221bd62ba81625e1f07e4d2b58a214786d0d23382f3d755f8bbd14102a8773",
+    "emns/workspace/affine.py": "ab1171c08c0d9d3ec787670b8f7ae03cfeb81e146f914088092fff86ef944eaa",
+    "emns/workspace/__init__.py": "835a80bc304581fed163bf904f2cabf4ef44e15f2a7c168aa804de17d08fc033",
+    "emns/workspace/fast.py": "6070aaf5608c737027201ee65991dba55f0b84443e7f648cdd8f4c5bc5b462de",
+    "emns/workspace/interval_fast.py": "2699f446acf68f078ac892b95bc8ce983d9611a83e6ab9ce8268116e84e67e37",
+    "emns/certificates/__init__.py": "0a9aa60fcd7191b2ed12ec0939701d067d5f4378217efd1e62c9e290c02842be",
+    "emns/certificates/tight_region.py": "79467ba60479c6847c926214fd74068a7f378ee33e1bc1747b4aeb7074f22152",
+    "emns/numerics/interval.py": "6d7d6b538874e78737fd287d1ecbcb7fb5b2c27d91a90f45ea7e9653d53854d2",
+    "emns/numerics/affine.py": "2697f01d6b02bcdb31b5ec66e9a1f3b19b9d82b7b05acda87eda50f750d817c9",
+    "emns/numerics/__init__.py": "e6ee5860b76d3270676c2bcc8442a53424586aa315fe1919ac15ffb1be2cda87"
+  },
+  "evidence_status": "nominal floating point; studies 6.4 and 7.4 reuse archived outputs",
+  "cpu": "Apple M5 Pro"
+}

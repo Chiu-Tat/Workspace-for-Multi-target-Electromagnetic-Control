@@ -1,0 +1,17 @@
+{
+  "description": "Idealized radial artery and one companion vein in the forearm; synthetic close-approach geometry, not a scan",
+  "title": "Two vessels approaching side by side",
+  "units": "mm",
+  "origin_emns_mm": [0, 0, 85],
+  "rotation_local_to_emns": [[1,0,0],[0,1,0],[0,0,1]],
+  "separation_axis": 0,
+  "designed_lumen_gap_mm": 0.5,
+  "branches": {
+    "RA": {"label": "Radial artery", "control_points_mm": [[-7,-28,0],[0.7,-10,0],[0.7,10,0],[-7,28,0]], "radius_start_mm": 1.15, "radius_end_mm": 1.15, "bulb_amplitude_mm": 0, "bulb_center_s": 0.5, "bulb_width_s": 0.2},
+    "RV": {"label": "Companion vein", "control_points_mm": [[7,-28,0],[-0.7,-10,0],[-0.7,10,0],[7,28,0]], "radius_start_mm": 0.8, "radius_end_mm": 0.8, "bulb_amplitude_mm": 0, "bulb_center_s": 0.5, "bulb_width_s": 0.2}
+  },
+  "illustrative_particles": [
+    {"name":"Sphere 1", "branch":"RA", "s":0.5, "radius_um":50, "target_branch":"RA"},
+    {"name":"Sphere 2", "branch":"RV", "s":0.5, "radius_um":50, "target_branch":"RV"}
+  ]
+}

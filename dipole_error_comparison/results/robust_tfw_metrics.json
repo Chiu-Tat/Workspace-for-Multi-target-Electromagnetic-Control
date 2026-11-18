@@ -1,0 +1,60 @@
+{
+  "scope": "pointwise Corollary-1 classification on the 61x61, beta=90 deg slice; rho>0 rows are assumed scenarios; not a continuous or hardware-robust certificate",
+  "valid": 3576,
+  "nominal_feasible": 3495,
+  "finite_body_feasible": 3492,
+  "feasible_under_both": 3474,
+  "nominal_feasible_below_20mm": 211,
+  "valid_at_or_beyond_20mm": 3284,
+  "rows": [
+    {
+      "rho_fraction_of_abs_c_dip": 0.0,
+      "assumed": false,
+      "robust_feasible": 3445,
+      "lost_vs_nominal": 50,
+      "robust_below_20mm": 161,
+      "robust_at_or_beyond_20mm": 3284,
+      "closest_robust_separation_mm": 14.240006242195884
+    },
+    {
+      "rho_fraction_of_abs_c_dip": 0.05,
+      "assumed": true,
+      "robust_feasible": 3444,
+      "lost_vs_nominal": 51,
+      "robust_below_20mm": 160,
+      "robust_at_or_beyond_20mm": 3284,
+      "closest_robust_separation_mm": 14.240006242195891
+    },
+    {
+      "rho_fraction_of_abs_c_dip": 0.1,
+      "assumed": true,
+      "robust_feasible": 3442,
+      "lost_vs_nominal": 53,
+      "robust_below_20mm": 158,
+      "robust_at_or_beyond_20mm": 3284,
+      "closest_robust_separation_mm": 14.240006242195891
+    },
+    {
+      "rho_fraction_of_abs_c_dip": 0.2,
+      "assumed": true,
+      "robust_feasible": 3432,
+      "lost_vs_nominal": 63,
+      "robust_below_20mm": 148,
+      "robust_at_or_beyond_20mm": 3284,
+      "closest_robust_separation_mm": 14.240006242195891
+    }
+  ],
+  "checks": {
+    "zero_reserve_recovers_nominal": true,
+    "nested_shrinkage": true,
+    "robust_subset_of_both_models": true
+  },
+  "planned_path": {
+    "file": "Results/trajectory_case6_3D_02.json",
+    "min_separation_mm": 30.480631524517218,
+    "heading_range_deg": [
+      60.422271743563414,
+      158.6816449978721
+    ]
+  }
+}

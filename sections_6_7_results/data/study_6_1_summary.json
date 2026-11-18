@@ -1,0 +1,12 @@
+{
+  "source": "Modeling/10 coil data 3D/coil1_to_10_model_accuracy_summary.csv",
+  "n_coils": 10,
+  "samples_per_coil": 477,
+  "test_points_per_coil": 117,
+  "mean_vector_error_mT_across_coils": 0.7464229131817489,
+  "pooled_vector_rmse_mT": 1.0553412509656457,
+  "worst_sample_vector_error_mT": 9.15213105808615,
+  "evidence_status": "measured coil-field residuals from archived summary; not gradient or interaction validation",
+  "elapsed_s": 0.25486950000049546,
+  "run_id": "1789487776576686000"
+}

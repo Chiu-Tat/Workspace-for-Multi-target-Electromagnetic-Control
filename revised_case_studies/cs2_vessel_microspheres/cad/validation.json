@@ -1,0 +1,1002 @@
+{
+  "units": "mm",
+  "cadquery_version": "2.8.0",
+  "loft_stations_per_branch": 65,
+  "representation": "Main-trunk pipes: 8 mm OD / 4 mm ID, flat open ends, 2 mm nominal wall; solid side appendages with rounded tips.",
+  "coordinate_frame": "Publication eMNS frame; closest sampled trunk pair centred at (0, 0, 70.2) mm.",
+  "accuracy_note": "Sampled surface errors are diagnostics, not rigorous global bounds. Volumes use 1e-9 numerical integration tolerance.",
+  "models": {
+    "side_by_side": {
+      "main_trunk_pipe": {
+        "outer_diameter_mm": 8.0,
+        "inner_diameter_mm": 4.0,
+        "wall_thickness_mm": 2.0,
+        "ends": "Flat annular faces; both main-trunk bores open at both ends.",
+        "side_branches": "Retain previous exterior sizes; no separate side-branch bores are requested.",
+        "separation_axis": 0,
+        "additional_network_separation_mm": 3.925394550689136,
+        "outer_separating_slab_gap_mm": 1.0,
+        "simulation_radius": "Main-trunk radius fields represent the 2 mm inner lumen radius."
+      },
+      "pipe_checks": {
+        "artery": {
+          "outer_diameter_mm": 8.0,
+          "inner_diameter_mm": 4.0,
+          "nominal_wall_thickness_mm": 2.0,
+          "bore_wall_samples": 392,
+          "bore_clear": true,
+          "ends_open": true,
+          "ports": [
+            {
+              "center_mm": [
+                -15.415389698191262,
+                -46.65209115956402,
+                68.21772239657972
+              ],
+              "annular_face_area_mm2": 37.69911182556848,
+              "boundary_wires": 2
+            },
+            {
+              "center_mm": [
+                -15.931829705077199,
+                49.750043459144386,
+                73.3821224654391
+              ],
+              "annular_face_area_mm2": 37.6991118255687,
+              "boundary_wires": 2
+            }
+          ]
+        },
+        "vein": {
+          "outer_diameter_mm": 8.0,
+          "inner_diameter_mm": 4.0,
+          "nominal_wall_thickness_mm": 2.0,
+          "bore_wall_samples": 392,
+          "bore_clear": true,
+          "ends_open": true,
+          "ports": [
+            {
+              "center_mm": [
+                12.610538507174972,
+                -46.65209115956402,
+                68.21772239657972
+              ],
+              "annular_face_area_mm2": 37.699111825567904,
+              "boundary_wires": 2
+            },
+            {
+              "center_mm": [
+                16.225618555376542,
+                49.750043459144386,
+                73.3821224654391
+              ],
+              "annular_face_area_mm2": 37.699111825568295,
+              "boundary_wires": 2
+            }
+          ]
+        }
+      },
+      "uniform_scaling": {
+        "factor_from_original": 1.7214666896197928,
+        "original_y_extent_mm": 58.089999999992,
+        "target_y_extent_mm": 100,
+        "scaled_quantities": "All local x/y/z dimensions, lumen radii, waviness and bulb amplitudes; registration origin is a placement coordinate."
+      },
+      "source": "cases/case_7_vessel_microspheres/geometries/branched_parallel.json",
+      "source_sha256": "5b04293b3611a0b52b6dfacd2f260ddaa77927b3b6fe6514a96517370120cc1d",
+      "translation_from_source_emns_mm": [
+        -0.025252243812310966,
+        1.54897614979018,
+        -14.200077568990595
+      ],
+      "step_file": "cs2_branched_side_by_side.step",
+      "step_sha256": "46a4c586b74e32137cd70124bb2dd27245d01a2015b78bf96bb50f0bf7847f07",
+      "branches": {
+        "RA": {
+          "sampled_envelope_error_mm": 7.622995168222758e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 5063.455160476235,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -19.53077144191084,
+              -48.51009970548159,
+              64.31698362148784
+            ],
+            "max": [
+              -0.5055012363920641,
+              51.70184370647786,
+              77.28572285723324
+            ]
+          }
+        },
+        "RA_B1": {
+          "sampled_envelope_error_mm": 1.3242974103727381e-05,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 44.34214356495942,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -26.118205053675606,
+              -33.78694893198435,
+              66.59142691547402
+            ],
+            "max": [
+              -9.08446430655672,
+              -18.474674874485256,
+              71.90884748317352
+            ]
+          }
+        },
+        "RA_B2": {
+          "sampled_envelope_error_mm": 0.00023114316381319118,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 85.058919144937,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -39.17232667529903,
+              -16.073296466774543,
+              71.54581310066006
+            ],
+            "max": [
+              -4.6946196689248545,
+              -6.215503366192173,
+              78.48005307311753
+            ]
+          }
+        },
+        "RA_B2_twig": {
+          "sampled_envelope_error_mm": 4.625817605277406e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 12.020124754136294,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -34.41838348369913,
+              -13.268146676860164,
+              73.21120359816416
+            ],
+            "max": [
+              -20.629435299844587,
+              -8.53420391889627,
+              76.56806364292275
+            ]
+          }
+        },
+        "RA_B3": {
+          "sampled_envelope_error_mm": 7.787937660276157e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 79.32685825213825,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -29.776452703874075,
+              10.65190527700782,
+              63.3542038047388
+            ],
+            "max": [
+              -3.9852666133213814,
+              34.721624677940724,
+              70.20925630947379
+            ]
+          }
+        },
+        "RA_B3_twig": {
+          "sampled_envelope_error_mm": 3.590469978691988e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 12.754605754203768,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -30.927134748976663,
+              18.219219961119727,
+              63.78358462759995
+            ],
+            "max": [
+              -20.49504660988072,
+              28.651308100215665,
+              67.14044467235854
+            ]
+          }
+        },
+        "RA_B4": {
+          "sampled_envelope_error_mm": 2.7391521044191503e-07,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 27.612788740293887,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -22.98155029381978,
+              30.1413407425123,
+              69.1562065074423
+            ],
+            "max": [
+              -7.903223559440012,
+              43.49820088727229,
+              73.9057331041033
+            ]
+          }
+        },
+        "RV": {
+          "sampled_envelope_error_mm": 8.6271999048552e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 5027.3111892785855,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              0.4944982863063748,
+              -48.274629203431054,
+              64.3235549483173
+            ],
+            "max": [
+              19.847242518258387,
+              51.66194819709125,
+              77.28448866932327
+            ]
+          }
+        },
+        "RV_B1": {
+          "sampled_envelope_error_mm": 6.88337109176867e-05,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 40.71247290400674,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              5.6518684090504125,
+              -35.20293781065257,
+              67.80313330018117
+            ],
+            "max": [
+              29.40931375248629,
+              -23.06192997863462,
+              72.80305574139014
+            ]
+          }
+        },
+        "RV_B2": {
+          "sampled_envelope_error_mm": 7.033092757746889e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 49.910984085444035,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              3.577284608051677,
+              -7.13021383127488,
+              69.41075510444699
+            ],
+            "max": [
+              22.253993163743697,
+              13.435541847489977,
+              76.03719683280048
+            ]
+          }
+        },
+        "RV_B2_twig": {
+          "sampled_envelope_error_mm": 8.146881705343029e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 8.082286040933912,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              12.112619433323983,
+              -1.7943231788382712,
+              71.97937622684363
+            ],
+            "max": [
+              19.773146202132057,
+              7.287554857592892,
+              75.25016293712123
+            ]
+          }
+        },
+        "RV_B3": {
+          "sampled_envelope_error_mm": 8.959119137427098e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 46.749036097661374,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              5.591490753688038,
+              18.10943877675063,
+              63.1988079534735
+            ],
+            "max": [
+              37.90824062458247,
+              29.768588372207557,
+              69.69355748007106
+            ]
+          }
+        },
+        "RV_B3_twig": {
+          "sampled_envelope_error_mm": 5.236076669371379e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 10.255791296369358,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              26.557671507693332,
+              21.015595606410837,
+              63.704808039546904
+            ],
+            "max": [
+              39.589174348115165,
+              26.60938527356708,
+              66.97559474982452
+            ]
+          }
+        },
+        "RV_B4": {
+          "sampled_envelope_error_mm": 1.271385598623694e-07,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 18.04434083814019,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              11.489691545563527,
+              39.687388702575646,
+              70.91217552104213
+            ],
+            "max": [
+              26.39759307767093,
+              47.70942357620383,
+              75.49127691543079
+            ]
+          }
+        }
+      },
+      "networks": {
+        "artery": {
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 3976.309072976732,
+          "face_count": 42,
+          "bounds_mm": {
+            "min": [
+              -39.17232667529903,
+              -48.51009970548159,
+              63.3542038047388
+            ],
+            "max": [
+              -0.5055012363920641,
+              51.70184370647786,
+              78.48005307311753
+            ]
+          }
+        },
+        "vein": {
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 3887.011252342314,
+          "face_count": 42,
+          "bounds_mm": {
+            "min": [
+              0.4944982863063748,
+              -48.274629203431054,
+              63.1988079534735
+            ],
+            "max": [
+              39.589174348115165,
+              51.66194819709125,
+              77.28448866932327
+            ]
+          }
+        }
+      },
+      "minimum_network_gap_mm": 1.2066685347706132,
+      "overlap_volume_mm3": 0.0,
+      "round_trip": {
+        "valid": true,
+        "solid_count": 2,
+        "closed_shells": true,
+        "volume_mm3": 7863.320318245054,
+        "face_count": 84,
+        "bounds_mm": {
+          "min": [
+            -39.17232667529,
+            -48.510099705475085,
+            63.198807953473
+          ],
+          "max": [
+            39.589174348114994,
+            51.70184370647777,
+            78.480053073117
+          ]
+        },
+        "relative_volume_error": 8.996189001675832e-10,
+        "pipe_checks": {
+          "artery": {
+            "outer_diameter_mm": 8.0,
+            "inner_diameter_mm": 4.0,
+            "nominal_wall_thickness_mm": 2.0,
+            "bore_wall_samples": 392,
+            "bore_clear": true,
+            "ends_open": true,
+            "ports": [
+              {
+                "center_mm": [
+                  -15.415389698191262,
+                  -46.65209115956402,
+                  68.21772239657972
+                ],
+                "annular_face_area_mm2": 37.69911182557479,
+                "boundary_wires": 2,
+                "measured_inner_diameter_mm": 3.9999999990712407,
+                "measured_outer_diameter_mm": 7.9999999981428
+              },
+              {
+                "center_mm": [
+                  -15.931829705077199,
+                  49.750043459144386,
+                  73.3821224654391
+                ],
+                "annular_face_area_mm2": 37.699111825572274,
+                "boundary_wires": 2,
+                "measured_inner_diameter_mm": 3.999999999070111,
+                "measured_outer_diameter_mm": 7.999999998142034
+              }
+            ]
+          },
+          "vein": {
+            "outer_diameter_mm": 8.0,
+            "inner_diameter_mm": 4.0,
+            "nominal_wall_thickness_mm": 2.0,
+            "bore_wall_samples": 392,
+            "bore_clear": true,
+            "ends_open": true,
+            "ports": [
+              {
+                "center_mm": [
+                  12.610538507174972,
+                  -46.65209115956402,
+                  68.21772239657972
+                ],
+                "annular_face_area_mm2": 37.69911182556844,
+                "boundary_wires": 2,
+                "measured_inner_diameter_mm": 3.9999999990712554,
+                "measured_outer_diameter_mm": 7.999999998142299
+              },
+              {
+                "center_mm": [
+                  16.225618555376542,
+                  49.750043459144386,
+                  73.3821224654391
+                ],
+                "annular_face_area_mm2": 37.699111825566725,
+                "boundary_wires": 2,
+                "measured_inner_diameter_mm": 3.999999999070899,
+                "measured_outer_diameter_mm": 7.999999998141984
+              }
+            ]
+          }
+        }
+      }
+    },
+    "over_under": {
+      "main_trunk_pipe": {
+        "outer_diameter_mm": 8.0,
+        "inner_diameter_mm": 4.0,
+        "wall_thickness_mm": 2.0,
+        "ends": "Flat annular faces; both main-trunk bores open at both ends.",
+        "side_branches": "Retain previous exterior sizes; no separate side-branch bores are requested.",
+        "separation_axis": 2,
+        "additional_network_separation_mm": 4.584565175657176,
+        "outer_separating_slab_gap_mm": 1.0,
+        "simulation_radius": "Main-trunk radius fields represent the 2 mm inner lumen radius."
+      },
+      "pipe_checks": {
+        "artery": {
+          "outer_diameter_mm": 8.0,
+          "inner_diameter_mm": 4.0,
+          "nominal_wall_thickness_mm": 2.0,
+          "bore_wall_samples": 392,
+          "bore_clear": true,
+          "ends_open": true,
+          "ports": [
+            {
+              "center_mm": [
+                -16.698237561919125,
+                -46.153735613683956,
+                63.109626470444645
+              ],
+              "annular_face_area_mm2": 37.69911182556796,
+              "boundary_wires": 2
+            },
+            {
+              "center_mm": [
+                17.8573393242421,
+                49.83397795898612,
+                63.109626470444645
+              ],
+              "annular_face_area_mm2": 37.69911182556824,
+              "boundary_wires": 2
+            }
+          ]
+        },
+        "vein": {
+          "outer_diameter_mm": 8.0,
+          "inner_diameter_mm": 4.0,
+          "nominal_wall_thickness_mm": 2.0,
+          "bore_wall_samples": 392,
+          "bore_clear": true,
+          "ends_open": true,
+          "ports": [
+            {
+              "center_mm": [
+                17.8573393242421,
+                -46.153735613683956,
+                77.29296300336884
+              ],
+              "annular_face_area_mm2": 37.69911182556796,
+              "boundary_wires": 2
+            },
+            {
+              "center_mm": [
+                -16.698237561919125,
+                49.83397795898612,
+                77.29296300336884
+              ],
+              "annular_face_area_mm2": 37.6991118255685,
+              "boundary_wires": 2
+            }
+          ]
+        }
+      },
+      "uniform_scaling": {
+        "factor_from_original": 1.9197542714534015,
+        "original_y_extent_mm": 52.089999999995996,
+        "target_y_extent_mm": 100,
+        "scaled_quantities": "All local x/y/z dimensions, lumen radii, waviness and bulb amplitudes; registration origin is a placement coordinate."
+      },
+      "source": "cases/case_7_vessel_microspheres/geometries/branched_crossing.json",
+      "source_sha256": "c7dcea1cbc3b4effdb931a5b191ddbe00aebc13603f5602b6037e0eb9da02949",
+      "translation_from_source_emns_mm": [
+        0.5795508811614893,
+        1.8401211726510829,
+        -14.798705263093265
+      ],
+      "step_file": "cs2_branched_over_under.step",
+      "step_sha256": "b8bf01c0c0b604051a216d49d34f5cd5407fd597a9eb9b4d2f71c12db0f77eda",
+      "branches": {
+        "RA": {
+          "sampled_envelope_error_mm": 3.7350604990247143e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 5144.597848386513,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -20.61317584787917,
+              -47.05351009754061,
+              59.12670469739482
+            ],
+            "max": [
+              21.772277610202156,
+              50.73375244284278,
+              69.70129483540111
+            ]
+          }
+        },
+        "RA_B1": {
+          "sampled_envelope_error_mm": 8.421789032925598e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 61.447642624442835,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -30.353529441359605,
+              -32.01479335989136,
+              57.05196665090108
+            ],
+            "max": [
+              -11.357752900755344,
+              -14.938771090740495,
+              65.48909469851164
+            ]
+          }
+        },
+        "RA_B2": {
+          "sampled_envelope_error_mm": 0.00011357763302692961,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 120.83052008252261,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -42.41947699367384,
+              -14.719245496138042,
+              55.13597509781973
+            ],
+            "max": [
+              -3.9704464695779658,
+              -3.7583778213691947,
+              66.70844582156798
+            ]
+          }
+        },
+        "RA_B2_twig": {
+          "sampled_envelope_error_mm": 2.573562968719034e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 16.941739865623607,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -37.87909989634195,
+              -11.437840566647308,
+              55.773242903540655
+            ],
+            "max": [
+              -22.5018681820002,
+              -6.156149070690866,
+              61.24454257718284
+            ]
+          }
+        },
+        "RA_B3": {
+          "sampled_envelope_error_mm": 1.8780184739326286e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 109.6970185830246,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              2.8916775081534123,
+              10.036908060730038,
+              56.222623206861854
+            ],
+            "max": [
+              31.653627978495418,
+              36.87910425961865,
+              66.74690809839655
+            ]
+          }
+        },
+        "RA_B3_twig": {
+          "sampled_envelope_error_mm": 2.887400215370348e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 17.78832347259372,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              21.76358182760197,
+              18.383777613427934,
+              55.29462658562931
+            ],
+            "max": [
+              33.39729271260958,
+              30.017488498435547,
+              60.33398154819449
+            ]
+          }
+        },
+        "RA_B4": {
+          "sampled_envelope_error_mm": 3.003233346148721e-07,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 39.16392630653375,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              10.831243662886216,
+              28.67776511181608,
+              58.403665633431416
+            ],
+            "max": [
+              27.64637132654656,
+              43.57313860402307,
+              65.62002193982477
+            ]
+          }
+        },
+        "RV": {
+          "sampled_envelope_error_mm": 6.964814692298195e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 5154.285999490674,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -20.567650586203683,
+              -47.231152173285196,
+              70.70129463647892
+            ],
+            "max": [
+              21.726752348526553,
+              50.91139451858737,
+              81.27628048812869
+            ]
+          }
+        },
+        "RV_B1": {
+          "sampled_envelope_error_mm": 4.1757753178839894e-05,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 55.79259858806039,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              9.869007513913212,
+              -34.593673485159705,
+              74.45021967451471
+            ],
+            "max": [
+              36.36296028796017,
+              -21.03931480354572,
+              82.70650686975435
+            ]
+          }
+        },
+        "RV_B2": {
+          "sampled_envelope_error_mm": 1.1507867851990372e-05,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 70.08078035382763,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              1.789926615467591,
+              -6.2243444637480785,
+              73.66534733817369
+            ],
+            "max": [
+              22.61791663274698,
+              16.70435258001084,
+              84.8945659981861
+            ]
+          }
+        },
+        "RV_B2_twig": {
+          "sampled_envelope_error_mm": 5.266278529995571e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 11.370565975752262,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              11.06618875791407,
+              -0.22539439655621757,
+              78.99486778355711
+            ],
+            "max": [
+              19.60909526588171,
+              9.916586000019619,
+              84.37017974362662
+            ]
+          }
+        },
+        "RV_B3": {
+          "sampled_envelope_error_mm": 8.408060261436252e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 64.6422391471864,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -42.44434950279267,
+              17.045689765472364,
+              74.13461207228778
+            ],
+            "max": [
+              -6.4051865156522565,
+              30.04780149517197,
+              84.25709239480727
+            ]
+          }
+        },
+        "RV_B3_twig": {
+          "sampled_envelope_error_mm": 2.4681693906498632e-06,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 14.252143130816007,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -43.75042402765359,
+              20.18807119591112,
+              80.39395828077356
+            ],
+            "max": [
+              -29.217884192751338,
+              26.41100919338632,
+              85.33732552976608
+            ]
+          }
+        },
+        "RV_B4": {
+          "sampled_envelope_error_mm": 1.289152726425651e-07,
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 25.74129037892241,
+          "face_count": 6,
+          "bounds_mm": {
+            "min": [
+              -29.487896517573784,
+              38.51384188279015,
+              75.5920607188611
+            ],
+            "max": [
+              -12.862824526787326,
+              47.45989688776305,
+              82.61836135238056
+            ]
+          }
+        }
+      },
+      "networks": {
+        "artery": {
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 4101.500323694108,
+          "face_count": 46,
+          "bounds_mm": {
+            "min": [
+              -42.41947699367384,
+              -47.05351009754061,
+              55.13597509781973
+            ],
+            "max": [
+              33.39729271260958,
+              50.73375244284278,
+              69.70129483540111
+            ]
+          }
+        },
+        "vein": {
+          "valid": true,
+          "solid_count": 1,
+          "closed_shells": true,
+          "volume_mm3": 4037.632122917902,
+          "face_count": 43,
+          "bounds_mm": {
+            "min": [
+              -43.75042402765359,
+              -47.231152173285196,
+              70.70129463647892
+            ],
+            "max": [
+              36.36296028796017,
+              50.91139451858737,
+              85.33732552976608
+            ]
+          }
+        }
+      },
+      "minimum_network_gap_mm": 1.0054777805142632,
+      "overlap_volume_mm3": 0.0,
+      "round_trip": {
+        "valid": true,
+        "solid_count": 2,
+        "closed_shells": true,
+        "volume_mm3": 8139.132442363406,
+        "face_count": 89,
+        "bounds_mm": {
+          "min": [
+            -43.750424027649,
+            -47.23115217327928,
+            55.13597509782
+          ],
+          "max": [
+            36.362960287961,
+            50.91139451858726,
+            85.337325529766
+          ]
+        },
+        "relative_volume_error": 5.219972131899095e-10,
+        "pipe_checks": {
+          "artery": {
+            "outer_diameter_mm": 8.0,
+            "inner_diameter_mm": 4.0,
+            "nominal_wall_thickness_mm": 2.0,
+            "bore_wall_samples": 392,
+            "bore_clear": true,
+            "ends_open": true,
+            "ports": [
+              {
+                "center_mm": [
+                  -16.698237561919125,
+                  -46.153735613683956,
+                  63.109626470444645
+                ],
+                "annular_face_area_mm2": 37.6991118255582,
+                "boundary_wires": 2,
+                "measured_inner_diameter_mm": 3.999999999072212,
+                "measured_outer_diameter_mm": 7.999999998141964
+              },
+              {
+                "center_mm": [
+                  17.8573393242421,
+                  49.83397795898612,
+                  63.109626470444645
+                ],
+                "annular_face_area_mm2": 37.6991118255667,
+                "boundary_wires": 2,
+                "measured_inner_diameter_mm": 3.9999999990711146,
+                "measured_outer_diameter_mm": 7.999999998142093
+              }
+            ]
+          },
+          "vein": {
+            "outer_diameter_mm": 8.0,
+            "inner_diameter_mm": 4.0,
+            "nominal_wall_thickness_mm": 2.0,
+            "bore_wall_samples": 392,
+            "bore_clear": true,
+            "ends_open": true,
+            "ports": [
+              {
+                "center_mm": [
+                  17.8573393242421,
+                  -46.153735613683956,
+                  77.29296300336884
+                ],
+                "annular_face_area_mm2": 37.69911182556327,
+                "boundary_wires": 2,
+                "measured_inner_diameter_mm": 3.999999999071187,
+                "measured_outer_diameter_mm": 7.999999998141851
+              },
+              {
+                "center_mm": [
+                  -16.698237561919125,
+                  49.83397795898612,
+                  77.29296300336884
+                ],
+                "annular_face_area_mm2": 37.699111825586925,
+                "boundary_wires": 2,
+                "measured_inner_diameter_mm": 3.9999999990713277,
+                "measured_outer_diameter_mm": 7.999999998143802
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

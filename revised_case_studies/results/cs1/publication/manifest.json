@@ -1,0 +1,146 @@
+{
+  "source_hash": "afcc96ba43eb5fd344aafc94379db92f42fdc0b4a4082e9818d4204027be8a50",
+  "numerical_validation": {
+    "point_checks_3d": 720,
+    "max_scaled_degenerate_map_difference": 3.001499708499278e-09,
+    "degenerate_map_scaled_tolerance": 1e-08,
+    "meaning": "Implementation consistency checks, not continuous verification or hardware validation."
+  },
+  "figures": [
+    "cs1_compact"
+  ],
+  "task": {
+    "B_hold_T": 0.02,
+    "F_range_N": [
+      -0.1,
+      0.1
+    ],
+    "I_bounds_A": [
+      -15,
+      15
+    ]
+  },
+  "tfw": {
+    "single": {
+      "file": "revised_case_studies/results/cs1/tfw3d_fine/tfw3d_single.json",
+      "eps": [
+        0.00078125,
+        0.00078125,
+        0.09817477042468103
+      ],
+      "volume_fraction": {
+        "inside": 0.8605785369873047,
+        "outside": 0.0015087127685546864,
+        "undetermined": 0.13791275024414065
+      }
+    },
+    "gate": {
+      "file": "revised_case_studies/results/cs1/tfw3d_fine/tfw3d_gate.json",
+      "eps": [
+        0.00078125,
+        0.00078125,
+        0.09817477042468103
+      ],
+      "volume_fraction": {
+        "inside": 0.7674007415771484,
+        "outside": 0.0010957717895507808,
+        "undetermined": 0.2315034866333008
+      }
+    },
+    "triangle": {
+      "file": "revised_case_studies/results/cs1/tfw3d_fine/tfw3d_triangle.json",
+      "eps": [
+        0.00078125,
+        0.00078125,
+        0.09817477042468103
+      ],
+      "volume_fraction": {
+        "inside": 0.6896276473999025,
+        "outside": 0.00026321411132812516,
+        "undetermined": 0.31010913848876953
+      }
+    }
+  },
+  "derivative": "Corrected dBy/dy coefficient 6*y*m_y/r^5 in point and affine maps.",
+  "planned_path": "revised_case_studies/results/cs1/presentation/trajectory_single_planned.json",
+  "simulation_settings": {
+    "speed_m_s": 0.005,
+    "outer_step_s": 0.1,
+    "plant_step_s": 0.01,
+    "drag_N_s_m": 5.0,
+    "alignment_time_s": 0.15,
+    "K_P_N_m": 4.0,
+    "K_H_rad_m": 20.0,
+    "geometry_stop_radius_mm": 11.297002008617921,
+    "heading_correction_cap_rad": 0.6,
+    "current_slew": "Not imposed",
+    "allocation_geometry": "Commanded heading; actual heading relaxes in the plant.",
+    "repeat_count": 1,
+    "hardware_status": "No new hardware experiment; explicit placeholders."
+  },
+  "simulation_summary": {
+    "detour": {
+      "active_interval_s": [
+        0,
+        20.75
+      ],
+      "reference_duration_s": 20.75,
+      "recorded_duration_s": 23.700000000000003,
+      "position_rmse_mm": 0.19180431465632583,
+      "position_mae_mm": 0.15319455531231563,
+      "position_p95_mm": 0.3671492188688253,
+      "heading_rmse_deg": 1.5473736663233764,
+      "last_goal_error_mm": 0.40860257611197265,
+      "min_separation_mm": 22.48470295955807,
+      "peak_current_A": 7.315578550477881,
+      "active_saturated_fraction": 0.0,
+      "command_infeasible_samples": 0,
+      "actual_pose_full_task_infeasible_samples": 0,
+      "abort": null
+    },
+    "crossing": {
+      "active_interval_s": [
+        0,
+        7.1000000000000005
+      ],
+      "reference_duration_s": 18.09187568321339,
+      "recorded_duration_s": 7.1000000000000005,
+      "position_rmse_mm": 0.6119816201042279,
+      "position_mae_mm": 0.33952800545304845,
+      "position_p95_mm": 1.378584610681965,
+      "heading_rmse_deg": 0.4426868117476475,
+      "last_goal_error_mm": 55.12741049846935,
+      "min_separation_mm": 11.879024281442435,
+      "peak_current_A": 15.0,
+      "active_saturated_fraction": 0.06944444444444445,
+      "command_infeasible_samples": 2,
+      "actual_pose_full_task_infeasible_samples": 3,
+      "abort": {
+        "time_s": 7.1000000000000005,
+        "reason": "Conservative non-overlap boundary reached; simulation terminated."
+      }
+    }
+  },
+  "auxiliary_passage": {
+    "scope": "Auxiliary x=8 mm passage at 5 mm/s; different geometry from the primary x=10 mm crossing.",
+    "summary": {
+      "active_interval_s": [
+        0,
+        18.09187568321339
+      ],
+      "reference_duration_s": 18.09187568321339,
+      "recorded_duration_s": 21.0,
+      "position_rmse_mm": 0.5784986384169573,
+      "position_mae_mm": 0.43410936187520294,
+      "position_p95_mm": 1.2974754834351774,
+      "heading_rmse_deg": 0.5017386946137626,
+      "last_goal_error_mm": 0.17573048887597664,
+      "min_separation_mm": 13.352376553686929,
+      "peak_current_A": 15.0,
+      "active_saturated_fraction": 0.09944751381215469,
+      "command_infeasible_samples": 0,
+      "actual_pose_full_task_infeasible_samples": 6,
+      "abort": null
+    }
+  }
+}

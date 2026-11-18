@@ -1,0 +1,26 @@
+{
+ "inside": {
+  "a_deg": [
+   158.7615062761506,
+   -21.23849372384937
+  ],
+  "max_rel_field_error": 1.5612511283791264e-15,
+  "fraction_of_phases_feasible": 1.0
+ },
+ "boundary": {
+  "a_deg": [
+   159.36401673640168,
+   -0.15062761506275865
+  ],
+  "max_rel_field_error": 1.951563910473908e-15,
+  "fraction_of_phases_feasible": 1.0
+ },
+ "outside": {
+  "a_deg": [
+   216.0,
+   -36.0
+  ],
+  "max_rel_field_error": 0.40326836337851324,
+  "fraction_of_phases_feasible": 0.6493055555555556
+ }
+}

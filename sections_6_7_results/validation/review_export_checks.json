@@ -1,0 +1,144 @@
+{
+  "interpretation": "Finite regression only; no continuous or hardware certification",
+  "reports": [
+    {
+      "source": "resolution_study.json",
+      "case": 0.008,
+      "checked_poses": 36,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "resolution_study.json",
+      "case": 0.004,
+      "checked_poses": 72,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "resolution_study.json",
+      "case": 0.002,
+      "checked_poses": 72,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "resolution_study.json",
+      "case": 0.001,
+      "checked_poses": 72,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "task_requirement_hybrid.json",
+      "case": "symmetric_60mT",
+      "checked_poses": 36,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "task_requirement_hybrid.json",
+      "case": "symmetric_80mT",
+      "checked_poses": 36,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "task_requirement_hybrid.json",
+      "case": "symmetric_100mT",
+      "checked_poses": 72,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "task_requirement_hybrid.json",
+      "case": "symmetric_120mT",
+      "checked_poses": 36,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "task_requirement_hybrid.json",
+      "case": "anisotropic_120_40mT",
+      "checked_poses": 72,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "task_requirement_hybrid.json",
+      "case": "anisotropic_40_120mT",
+      "checked_poses": 72,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "coil_configuration.json",
+      "case": "all_10",
+      "checked_poses": 72,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "coil_configuration.json",
+      "case": "nested_8",
+      "checked_poses": 72,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "coil_configuration.json",
+      "case": "alternate_8",
+      "checked_poses": 72,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "coil_configuration.json",
+      "case": "nested_6",
+      "checked_poses": 72,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "coil_configuration.json",
+      "case": 5.0,
+      "checked_poses": 36,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "coil_configuration.json",
+      "case": 10.0,
+      "checked_poses": 36,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    },
+    {
+      "source": "coil_configuration.json",
+      "case": 15.0,
+      "checked_poses": 72,
+      "unknown": 0,
+      "contradictions": [],
+      "area_check": "passed"
+    }
+  ],
+  "total_checked": 1008,
+  "total_unknown": 0,
+  "total_contradictions": 0
+}

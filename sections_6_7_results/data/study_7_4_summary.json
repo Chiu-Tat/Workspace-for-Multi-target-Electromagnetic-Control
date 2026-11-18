@@ -1,0 +1,40 @@
+{
+  "valid_points": 3576,
+  "nominal_feasible": 3495,
+  "robust_feasible": 3442,
+  "retained_fraction": 0.9848354792560801,
+  "sanity": {
+    "robust_subset_nominal": true,
+    "zero_uncertainty_equals_nominal": true,
+    "nested_uncertainty_sets_shrink": true,
+    "finite_reference_tends_to_point_dipole": true
+  },
+  "headings": [
+    {
+      "deg": 0,
+      "retained_fraction": 0.9943374858437146,
+      "nominal": 883,
+      "robust": 878
+    },
+    {
+      "deg": 45,
+      "retained_fraction": 0.9843924191750278,
+      "nominal": 897,
+      "robust": 883
+    },
+    {
+      "deg": 90,
+      "retained_fraction": 0.9845474613686535,
+      "nominal": 906,
+      "robust": 892
+    },
+    {
+      "deg": 135,
+      "retained_fraction": 0.9889258028792912,
+      "nominal": 903,
+      "robust": 893
+    }
+  ],
+  "max_derivative_relative_error": 1.6657218932744869e-07,
+  "elapsed_s": 0.003240207995986566
+}

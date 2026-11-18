@@ -1,0 +1,121 @@
+{
+  "scope": "pointwise grid comparison under configurable illustrative cylinder geometry; not continuous or hardware certification",
+  "grid": {
+    "n": 61,
+    "cell_spacing_m": 0.0016666666666666635,
+    "valid_points": 3576
+  },
+  "nonoverlap_center_separation_m": 0.011297002008617921,
+  "nominal_feasible_points": 3495,
+  "robust_feasible_points": 3442,
+  "nominal_area_m2_trapezoidal_grid_estimate": 0.009372222222222226,
+  "robust_area_m2_trapezoidal_grid_estimate": 0.009225000000000002,
+  "retained_fraction": 0.9848354792560801,
+  "removed_nominal_points": 53,
+  "max_reserved_error": {
+    "By": 0.00903554900172826,
+    "Bz": 0.018877487835715457,
+    "fy": 0.5261978790956275,
+    "fz": 1.0908319533418054
+  },
+  "quadrature_sensitivity_checks": [
+    {
+      "x_m": -0.03,
+      "y_m": -0.03,
+      "absolute_change": {
+        "By": 2.7460582982592632e-08,
+        "Bz": 2.4985640006507093e-08,
+        "fy": 3.3252611460443367e-07,
+        "fz": 6.64366820734316e-08
+      }
+    },
+    {
+      "x_m": 0.03166666666666666,
+      "y_m": -0.0049999999999999975,
+      "absolute_change": {
+        "By": 3.760404074418938e-05,
+        "Bz": 9.336067571263235e-06,
+        "fy": 0.00013631361675889297,
+        "fz": 0.0010088187242250773
+      }
+    },
+    {
+      "x_m": 0.035,
+      "y_m": -0.0016666666666666635,
+      "absolute_change": {
+        "By": 6.320704070625566e-06,
+        "Bz": 1.381320702470391e-05,
+        "fy": 0.0004214140353036022,
+        "fz": 0.00017705699912894807
+      }
+    },
+    {
+      "x_m": 0.01833333333333334,
+      "y_m": -0.018333333333333333,
+      "absolute_change": {
+        "By": 1.2897038025293955e-05,
+        "Bz": 4.500422466836157e-05,
+        "fy": 0.0006150953103482432,
+        "fz": 0.0017331975255719667
+      }
+    }
+  ],
+  "nested_multiplier_feasible_counts": {
+    "0.0": 3495,
+    "1.0": 3445,
+    "1.25": 3442,
+    "2.0": 3411
+  },
+  "point_dipole_limit_check": {
+    "pose_m": [
+      -0.03,
+      -0.03
+    ],
+    "absolute_difference": {
+      "By": 9.54447674052835e-11,
+      "Bz": 1.00825278542691e-10,
+      "fy": 1.3114489028705385e-09,
+      "fz": 1.6924402911023748e-10
+    },
+    "scaled_difference": {
+      "By": 9.859818892097313e-07,
+      "Bz": 6.695771827179769e-06,
+      "fy": 1.0468741821999292e-05,
+      "fz": 4.3453321374765996e-07
+    }
+  },
+  "sanity": {
+    "robust_subset_nominal": true,
+    "zero_uncertainty_equals_nominal": true,
+    "nested_uncertainty_sets_shrink": true,
+    "finite_reference_tends_to_point_dipole": true
+  },
+  "config": {
+    "grid_points_per_axis": 61,
+    "x_limits_m": [
+      -0.05,
+      0.05
+    ],
+    "y_limits_m": [
+      -0.05,
+      0.05
+    ],
+    "moving_heading_rad": 1.5707963267948966,
+    "current_limit_A": 15.0,
+    "reference_quadrature": {
+      "radial": 4,
+      "azimuthal": 16,
+      "axial": 5
+    },
+    "envelope_safety_factor": 1.25,
+    "geometry_scope": "illustrative_not_measured",
+    "moving_cylinder": {
+      "length_m": 0.009,
+      "diameter_m": 0.005
+    },
+    "fixed_cylinder": {
+      "length_m": 0.011,
+      "diameter_m": 0.0055
+    }
+  }
+}

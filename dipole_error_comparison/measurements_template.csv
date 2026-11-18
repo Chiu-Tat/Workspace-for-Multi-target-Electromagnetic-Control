@@ -1,0 +1,2 @@
+sample_id,split,x_m,y_m,z_m,moving_alpha_rad,moving_beta_rad,fixed_x_m,fixed_y_m,fixed_z_m,fixed_alpha_rad,fixed_beta_rad,moving_moment_Am2,fixed_moment_Am2,measured_By_T,measured_Bz_T,measured_fy_N,measured_fz_N,std_By_T,std_Bz_T,std_fy_N,std_fz_N,temperature_C,notes
+example_replace_me,held_out,,,,,,,,,,,,,,,,,,,,,,,

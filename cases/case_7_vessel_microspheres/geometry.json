@@ -1,0 +1,30 @@
+{
+  "description": "Idealized carotid bifurcation; design dimensions, not a patient reconstruction",
+  "units": "mm",
+  "origin_emns_mm": [0.0, 0.0, 85.0],
+  "rotation_local_to_emns": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+  "branches": {
+    "CCA": {
+      "label": "Common carotid | inlet",
+      "control_points_mm": [[0, -28, 0], [-1, -18, 0.5], [0, -8, 0], [0, 0, 0]],
+      "radius_start_mm": 3.2, "radius_end_mm": 3.2,
+      "bulb_amplitude_mm": 0.0, "bulb_center_s": 1.0, "bulb_width_s": 0.2
+    },
+    "ICA": {
+      "label": "Internal carotid | outlet A",
+      "control_points_mm": [[0, 0, 0], [-1.5, 8, 0], [-7, 19, 2.5], [-10, 30, 4]],
+      "radius_start_mm": 3.2, "radius_end_mm": 2.3,
+      "bulb_amplitude_mm": 0.7, "bulb_center_s": 0.22, "bulb_width_s": 0.18
+    },
+    "ECA": {
+      "label": "External carotid | outlet B",
+      "control_points_mm": [[0, 0, 0], [5, 5, 0], [13, 14, -2], [17, 24, -3]],
+      "radius_start_mm": 2.4, "radius_end_mm": 1.8,
+      "bulb_amplitude_mm": 0.0, "bulb_center_s": 0.2, "bulb_width_s": 0.2
+    }
+  },
+  "illustrative_particles": [
+    {"name": "Sphere 1", "branch": "CCA", "s": 0.52, "radius_um": 50, "target_branch": "ICA"},
+    {"name": "Sphere 2", "branch": "CCA", "s": 0.27, "radius_um": 50, "target_branch": "ECA"}
+  ]
+}

@@ -1,0 +1,19 @@
+case,description,bx_half_width_T,by_half_width_T,mode,inside_area_percent,outside_area_percent,unresolved_area_percent,inside_boxes,outside_boxes,unresolved_boxes,evaluated_boxes,runtime_s
+symmetric_60mT,easy symmetric task,0.06,0.06,interval_original,100.0,0.0,0.0,1108,0,0,1477,2.464289705036208
+symmetric_60mT,easy symmetric task,0.06,0.06,affine_original,100.0,0.0,0.0,268,0,0,357,0.7318673420231789
+symmetric_60mT,easy symmetric task,0.06,0.06,affine_recourse,100.0,0.0,0.0,208,0,0,277,1.3599921249551699
+symmetric_80mT,nominal Fig. 12 task,0.08,0.08,interval_original,39.86816406249999,0.0,60.1318359375,1576,0,2463,5385,16.626545080915093
+symmetric_80mT,nominal Fig. 12 task,0.08,0.08,affine_original,94.6044921875,0.0,5.395507812499998,2018,0,221,2985,8.403387172031216
+symmetric_80mT,nominal Fig. 12 task,0.08,0.08,affine_recourse,98.0712890625,0.0,1.9287109375000007,651,0,79,973,15.513685473008081
+symmetric_100mT,mixed-capacity symmetric task,0.1,0.1,interval_original,0.0,3.0517578125,96.9482421875,0,125,3971,5461,29.604926001047716
+symmetric_100mT,mixed-capacity symmetric task,0.1,0.1,affine_original,5.908203125,40.4541015625,53.6376953125,215,1294,2197,4941,28.371616504970007
+symmetric_100mT,mixed-capacity symmetric task,0.1,0.1,affine_recourse,13.76953125,62.59765625,23.632812500000004,405,1346,968,3625,51.76381474605296
+symmetric_120mT,beyond-capacity symmetric task,0.12,0.12,interval_original,0.0,87.353515625,12.646484375,0,2528,518,4061,13.557424839003943
+symmetric_120mT,beyond-capacity symmetric task,0.12,0.12,affine_original,0.0,99.755859375,0.24414062500000017,0,699,10,945,3.397491731098853
+symmetric_120mT,beyond-capacity symmetric task,0.12,0.12,affine_recourse,0.0,99.853515625,0.14648437500000025,0,655,6,881,6.959395101061091
+anisotropic_120_40mT,Bx-dominant task,0.12,0.04,interval_original,12.548828125,1.3427734374999996,86.10839843750001,469,55,3527,5401,20.91949046298396
+anisotropic_120_40mT,Bx-dominant task,0.12,0.04,affine_original,32.12890625,8.862304687499996,59.0087890625,695,276,2417,4517,21.137310691992752
+anisotropic_120_40mT,Bx-dominant task,0.12,0.04,affine_recourse,40.5517578125,23.144531249999996,36.3037109375,602,861,1487,3933,52.86738020309713
+anisotropic_40_120mT,By-dominant task,0.04,0.12,interval_original,17.919921875,0.0,82.080078125,653,0,3362,5353,21.730427474016324
+anisotropic_40_120mT,By-dominant task,0.04,0.12,affine_original,60.05859375,7.8125,32.12890625000001,1509,320,1316,4193,18.092534334980883
+anisotropic_40_120mT,By-dominant task,0.04,0.12,affine_recourse,69.482421875,8.496093749999998,22.021484375,878,348,902,2837,39.39375543803908

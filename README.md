@@ -1,165 +1,44 @@
 # Workspace for Multi-target Electromagnetic Control
 
-Supplementary code for the paper **"Electromagnetic control of multiple microrobots within certified feasible workspaces"**.
+Research code and reproduction inputs for **Electromagnetic control of multiple microrobots within certified feasible workspaces** by Da Zhao, Jiewen Tan, Xin Tong, Hongzhe Sun, Qi Luo, and Shing Shin Cheng.
 
-This repository provides reproducible examples for workspace analysis in a 10-coil electromagnetic actuation system, including interval and affine arithmetic based methods.
+The code models a shared ten-coil system under bounded currents. The actuation-feasible workspace (AFW) describes the outputs the coils can produce at a configuration. The task-feasible workspace (TFW) contains the configurations where the coils can produce every required command. Magnetic interactions enter the actuation map as configuration-dependent offsets.
 
-## Overview
+<img src="images/EM%20machine(1).png" alt="Photograph of the ten-coil system" width="220">
+<img src="images/EMS3.png" alt="Coil system diagram" width="420">
 
-This codebase includes four representative examples:
+## Setup
 
-1. Multi-target actuation-feasible workspace analysis (magnetic field / wrench related constraints).
-2. Task-feasible workspace comparison between affine and interval methods.
-3. A 2-DOF microrobot arm case study for certified workspace computation.
-4. An interactive multi-point rotating-field playground using an Xbox controller to move multiple rotating magnetic-field centers in real time.
+Use Python 3.12 and run the commands from the repository root.
 
-Core utility libraries for electromagnetic modeling and set-based analysis are also included:
-
-- `WS_lib.py`
-- `WS_lib_Affine.py`
-- `WS_lib_Interval_fast.py`
-- `Check_lib.py`
-- `custom_interval.py`
-- `custom_affine.py`
-
-## Electromagnetic Coil System
-
-The electromagnetic actuation platform used in this study is shown below:
-
-<img src="images/EM machine(1).png" alt="EM system photo" width="220"> <img src="images/EMS3.png" alt="EM system diagram" width="420">
-
-## Environment Setup
-
-Recommended: Python 3.9+ in a virtual environment.
-
-```bash
-pip install numpy scipy sympy matplotlib pypoman
+```sh
+python3.12 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m hybrid_region.test_hybrid_region
+python -m pytest -q
 ```
 
-Then run scripts directly, for example:
+On Windows PowerShell, activate the environment with `.venv\Scripts\Activate.ps1`. Force-test reference quadrature uses a C compiler with the `cc` command. The tests and figure workflows run offline with the included inputs.
 
-```bash
-python AFW_2D.py
-python Comparsion.py
-python Case_study.py
+## Reproduce the revised paper
+
+| Paper topic | Source and results |
+| --- | --- |
+| Pointwise AFW and TFW, interval and affine enclosures, and branch-and-prune with dependency-preserving current recourse and dual support tests | [Numerical library](emns/), [region classifier](hybrid_region/), [ten-coil benchmarks and exports](sections_6_7_results/) |
+| Measured cylinder-force fits and matched configuration-box comparisons | [Force-test workflow](dipole_error_comparison/force_test/) |
+| Case Study 1. Orientation, interaction-aware routes, and repeated-speed tracking for cylindrical magnets | [Case-study commands](revised_case_studies/#1-cylindrical-magnets), [workspace figure](revised_case_studies/results/cs1/publication/cs1_workspace.pdf), [autonomous trials](revised_case_studies/results/cs1/publication/cs1_hardware.pdf), [speed comparison](revised_case_studies/results/cs1/publication/cs1_speed.pdf) |
+| Case Study 2. Coordinated passing of two magnetic spheres in nearby vessels | [Case-study commands](revised_case_studies/#2-magnetic-spheres-in-vessels), [hardware trials](revised_case_studies/results/cs2/hardware/cs2_hardware.pdf) |
+| Case Study 3. Selective adjustment of two magnetic growing rods | [Case-study commands](revised_case_studies/#3-magnetic-growing-rods), [calibration and placement](revised_case_studies/results/cs3_growing_rods/publication/cs3_calibration_tfw.pdf), [phantom trial](revised_case_studies/results/cs3_growing_rods/publication/cs3_phantom_trial.pdf) |
+
+A short benchmark check uses the saved ablation results to regenerate their summary. The full run commands and output locations are in the [benchmark guide](sections_6_7_results/).
+
+```sh
+python -m analysis.sections_67.run --studies 6.4
+python -m analysis.sections_67.validate_exports
+python -m analysis.sections_67.paper_tables
 ```
 
-## 1) Actuation-feasible Workspace Example
+The classifier can return inside, outside, or unresolved. The floating-point implementation uses no directed rounding. The force reserve derived from measured residuals is empirical.
 
-File: `AFW_2D.py`
-
-This example computes and visualizes 2D feasible hulls for two target magnets under selected actuation outputs.
-
-A target magnet is configured as:
-
-```python
-{
-  'X': 0.02, 'Y': 0.02, 'Z': -0.03,
-  'm': 0.2,
-  'alpha': np.pi/2, 'beta': np.pi/2,
-  'Bx': True, 'By': None, 'Bz': None,
-  'Bx_dx': None, 'Bx_dy': None, 'Bx_dz': None,
-  'By_dy': None, 'By_dz': None,
-  'fx': None, 'fy': None, 'fz': None,
-  'tx': None, 'ty': None, 'tz': None,
-}
-```
-
-Set an actuation item to `True` to include it in the workspace projection; set to `None` to exclude it.
-
-Example output:
-
-<img src="images/AFW.png" alt="Actuation-feasible workspace" width="420">
-
-## 2) Affine vs Interval Comparison (Task-feasible Workspace)
-
-File: `Comparsion.py`
-
-This script compares affine and interval approaches for a 2D task set in the same coil system.
-
-Task requirement:
-
-$$
-\mathcal{C}=\{\mathbf{b} \in \mathbb{R}^2 \mid -0.08 \leq b_x \leq 0.08\,\mathrm{T},\ -0.08 \leq b_y \leq 0.08\,\mathrm{T}\}
-$$
-
-Example output:
-
-<img src="images/Comparison.png" alt="Affine vs interval comparison" width="620">
-
-## 3) 2-DOF Microrobot Arm Case Study
-
-File: `Case_study.py`
-
-This script computes the task-feasible workspace for a 2-DOF microrobot arm and supports multi-core acceleration.
-
-Task requirement:
-
-$$
-\mathcal{C}=\{\mathbf{b} \in \mathbb{R}^6 \mid
-b_{x,1}=0,\ b_{y,1}=0,\ b_{z,1}=0.02\,\mathrm{T},\
-b_{x,2}=0,\ b_{y,2}=0,\ b_{z,2}=0.03\,\mathrm{T}
-\}
-$$
-
-Example output:
-
-<img src="images/TFW_case_study.png" alt="2-DOF case study result" width="320">
-
-### Key parameters
-
-1. Configuration domain:
-
-```python
-beta1 = interval[-5/6 * math.pi, -1/6 * math.pi]
-alpha2 = interval[1/6 * math.pi, 5/6 * math.pi]
-```
-
-2. Coil current bounds (with interaction term enabled):
-
-```python
-I_intervals = create_I_intervals(11, custom_bounds={10: (1, 1)})
-```
-
-If interaction is disabled:
-
-```python
-I_intervals = [interval[-15, 15]] * 10
-```
-
-3. Bisection resolution:
-
-```python
-eps = 0.05
-```
-
-4. Number of CPU processes:
-
-```python
-num_processes = min(mp.cpu_count(), 16)
-```
-
-## Notes
-
-- On Windows, `Case_study.py` already includes `mp.freeze_support()` for multiprocessing compatibility.
-- If your machine has fewer resources, reduce `num_processes` and increase `eps` to shorten runtime.
-
-## 4) Interactive Multi-point Rotating Field Playground
-
-File: `Multi_point_rotating.py`
-
-This interactive demo uses an Xbox controller (with keyboard fallback) to control the positions of multiple rotating magnetic-field centers in real time.
-
-The simulation computes a shared feasible rotating-field amplitude for all targets and updates coil currents online to best match each target's in-plane rotating-field direction.
-
-Run:
-
-```bash
-python Multi_point_rotating.py
-```
-
-When prompted, enter the number of target points to control.
-
-Example output:
-
-<img src="images/playground.png" alt="Xbox-controlled rotating field playground" width="620">
+The original examples and their setup are in the [legacy guide](LEGACY.md).

@@ -1,0 +1,16 @@
+{
+  "affine": {
+    "inside_boxes": 2018,
+    "outside_boxes": 0,
+    "unresolved_boxes": 221,
+    "iterations": 2985,
+    "runtime_s": 8.551031735027209
+  },
+  "interval": {
+    "inside_boxes": 1576,
+    "outside_boxes": 0,
+    "unresolved_boxes": 2463,
+    "iterations": 5385,
+    "runtime_s": 17.14071084500756
+  }
+}

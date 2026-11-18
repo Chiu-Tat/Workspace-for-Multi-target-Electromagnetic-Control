@@ -1,0 +1,172 @@
+System_Name: 10_Coils_Fitted
+Coil_List:
+  - Coil_0
+  - Coil_1
+  - Coil_2
+  - Coil_3
+  - Coil_4
+  - Coil_5
+  - Coil_6
+  - Coil_7
+  - Coil_8
+  - Coil_9
+Coil_0:
+  Source_List:
+    - Src_0
+  Src_0:
+    A_Coeff: ~
+    B_Coeff:
+      - 1.4238896e-05
+    Source_Direction:
+      - -0.9166684
+      - -0.3103022
+      - 0.4549262
+    Source_Position:
+      - 0.12129096
+      - 0.00466922
+      - -0.0174842
+Coil_1:
+  Source_List:
+    - Src_0
+  Src_0:
+    A_Coeff: ~
+    B_Coeff:
+      - 1.5433072e-05
+    Source_Direction:
+      - -0.3306042
+      - 0.8776853
+      - 0.5090468
+    Source_Position:
+      - 0.05834654
+      - -0.11165548
+      - -0.01850546
+Coil_2:
+  Source_List:
+    - Src_0
+  Src_0:
+    A_Coeff: ~
+    B_Coeff:
+      - 1.5554076e-05
+    Source_Direction:
+      - 0.2603398
+      - 0.9153459
+      - 0.4145473
+    Source_Position:
+      - -0.05903076
+      - -0.11020417
+      - -0.01488244
+Coil_3:
+  Source_List:
+    - Src_0
+  Src_0:
+    A_Coeff: ~
+    B_Coeff:
+      - 1.4581086e-05
+    Source_Direction:
+      - 0.9527063
+      - -0.0041772
+      - 0.3274465
+    Source_Position:
+      - -0.12306086
+      - -0.00085745
+      - -0.01378161
+Coil_4:
+  Source_List:
+    - Src_0
+  Src_0:
+    A_Coeff: ~
+    B_Coeff:
+      - 1.4695944e-05
+    Source_Direction:
+      - 0.7785462
+      - -0.6396945
+      - 0.3037395
+    Source_Position:
+      - -0.06806179
+      - 0.1024875
+      - -0.01397152
+Coil_5:
+  Source_List:
+    - Src_0
+  Src_0:
+    A_Coeff: ~
+    B_Coeff:
+      - 1.5477752e-05
+    Source_Direction:
+      - -0.5818061
+      - -0.8266028
+      - 0.3870129
+    Source_Position:
+      - 0.06473315
+      - 0.10618968
+      - -0.0151172
+Coil_6:
+  Source_List:
+    - Src_0
+  Src_0:
+    A_Coeff: ~
+    B_Coeff:
+      - 1.2419518e-05
+    Source_Direction:
+      - 0.0747481
+      - 0.6887142
+      - 0.7020924
+    Source_Position:
+      - -0.00381254
+      - -0.08845466
+      - -0.08874662
+Coil_7:
+  Source_List:
+    - Src_0
+  Src_0:
+    A_Coeff: ~
+    B_Coeff:
+      - 1.2194064e-05
+    Source_Direction:
+      - 0.7159008
+      - -0.4023966
+      - 0.5741079
+    Source_Position:
+      - -0.07977306
+      - 0.04481733
+      - -0.08536032
+Coil_8:
+  Source_List:
+    - Src_0
+  Src_0:
+    A_Coeff: ~
+    B_Coeff:
+      - 1.2426162e-05
+    Source_Direction:
+      - -0.6190301
+      - -0.5497916
+      - 0.6532851
+    Source_Position:
+      - 0.07498008
+      - 0.04542436
+      - -0.08696975
+Coil_9:
+  Source_List:
+    - Src_0
+  Src_0:
+    A_Coeff: ~
+    B_Coeff:
+      - 1.4045218e-05
+    Source_Direction:
+      - 0.1674795
+      - -0.0079285
+      - 0.9858393
+    Source_Position:
+      - -0.00722183
+      - 0.00029277
+      - -0.12482979
+Workspace_Dimensions:
+  -
+    - -0.15
+    - 0.15
+  -
+    - -0.15
+    - 0.15
+  -
+    - -0.15
+    - 0.15

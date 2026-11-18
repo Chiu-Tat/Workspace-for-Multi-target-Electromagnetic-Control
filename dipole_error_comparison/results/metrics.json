@@ -1,0 +1,170 @@
+{
+  "scope": "direct pointwise comparison of point-dipole and distributed finite-body interaction models under configurable illustrative cylinder geometry; not continuous or hardware certification",
+  "grid": {
+    "n": 61,
+    "cell_spacing_m": 0.0016666666666666635,
+    "valid_points": 3576
+  },
+  "nonoverlap_center_separation_m": 0.011297002008617921,
+  "dipole_feasible_points": 3495,
+  "finite_body_feasible_points": 3492,
+  "both_feasible_points": 3474,
+  "dipole_only_points": 21,
+  "finite_body_only_points": 18,
+  "dipole_area_m2_trapezoidal_grid_estimate": 0.009372222222222226,
+  "finite_body_area_m2_trapezoidal_grid_estimate": 0.009363888888888894,
+  "symmetric_difference_area_m2_trapezoidal_grid_estimate": 0.00010833333333333333,
+  "dipole_only_area_m2_trapezoidal_grid_estimate": 5.833333333333336e-05,
+  "finite_body_only_area_m2_trapezoidal_grid_estimate": 5.0000000000000016e-05,
+  "finite_to_dipole_area_ratio": 0.9991108476585656,
+  "feasible_set_jaccard": 0.9888983774551665,
+  "max_absolute_model_discrepancy": {
+    "By": 0.007228439201382608,
+    "Bz": 0.015101990268572365,
+    "fy": 0.420958303276502,
+    "fz": 0.8726655626734443
+  },
+  "quadrature_sensitivity_checks": [
+    {
+      "x_m": -0.03,
+      "y_m": -0.03,
+      "absolute_change": {
+        "By": 2.7460582982592632e-08,
+        "Bz": 2.4985640006507093e-08,
+        "fy": 3.3252611460443367e-07,
+        "fz": 6.64366820734316e-08
+      }
+    },
+    {
+      "x_m": 0.008333333333333331,
+      "y_m": 0.0,
+      "absolute_change": {
+        "By": 6.600188739802147e-19,
+        "Bz": 3.8556272294867563e-05,
+        "fy": 0.0014142616396732588,
+        "fz": 2.5658091484590515e-16
+      }
+    },
+    {
+      "x_m": 0.011666666666666665,
+      "y_m": 0.011666666666666665,
+      "absolute_change": {
+        "By": 1.6255894839759324e-05,
+        "Bz": 5.478648038020201e-05,
+        "fy": 0.0020158175628932906,
+        "fz": 0.002048478870150465
+      }
+    },
+    {
+      "x_m": 0.015,
+      "y_m": -0.01666666666666667,
+      "absolute_change": {
+        "By": 4.069531343872321e-05,
+        "Bz": 2.8150067837426004e-05,
+        "fy": 0.001708206504677165,
+        "fz": 0.0005790107440141884
+      }
+    }
+  ],
+  "worked_boundary_example": {
+    "pose": {
+      "x_m": 0.02333333333333333,
+      "y_m": 0.013333333333333336,
+      "beta_rad": 1.5707963267948966,
+      "center_separation_m": 0.013743685418725537
+    },
+    "component_order": [
+      "By",
+      "Bz",
+      "fy",
+      "fz"
+    ],
+    "c_dip": [
+      -0.003942671113810967,
+      0.010185232897875846,
+      0.1314996534374094,
+      -0.24212629355524834
+    ],
+    "c_finite": [
+      -0.0072956833261338585,
+      0.014148013291440303,
+      0.30747135345782306,
+      -0.3907237044712763
+    ],
+    "signed_discrepancy": [
+      -0.0033530122123228917,
+      0.003962780393564458,
+      0.17597170002041365,
+      -0.14859741091602796
+    ],
+    "absolute_discrepancy": [
+      0.0033530122123228917,
+      0.003962780393564458,
+      0.17597170002041365,
+      0.14859741091602796
+    ],
+    "task_lower": [
+      0.0,
+      0.02,
+      0.0,
+      -0.1
+    ],
+    "task_upper": [
+      0.0,
+      0.02,
+      0.0,
+      0.1
+    ],
+    "dipole_feasible": true,
+    "finite_body_feasible": false
+  },
+  "point_dipole_limit_check": {
+    "pose_m": [
+      -0.03,
+      -0.03
+    ],
+    "absolute_difference": {
+      "By": 9.54447674052835e-11,
+      "Bz": 1.00825278542691e-10,
+      "fy": 1.3114489028705385e-09,
+      "fz": 1.6924402911023748e-10
+    },
+    "scaled_difference": {
+      "By": 9.859818892097313e-07,
+      "Bz": 6.695771827179769e-06,
+      "fy": 1.0468741821999292e-05,
+      "fz": 4.3453321374765996e-07
+    }
+  },
+  "sanity": {
+    "finite_reference_tends_to_point_dipole": true
+  },
+  "config": {
+    "grid_points_per_axis": 61,
+    "x_limits_m": [
+      -0.05,
+      0.05
+    ],
+    "y_limits_m": [
+      -0.05,
+      0.05
+    ],
+    "moving_heading_rad": 1.5707963267948966,
+    "current_limit_A": 15.0,
+    "reference_quadrature": {
+      "radial": 4,
+      "azimuthal": 16,
+      "axial": 5
+    },
+    "envelope_safety_factor": 1.25,
+    "geometry_scope": "illustrative_not_measured",
+    "moving_cylinder": {
+      "length_m": 0.009,
+      "diameter_m": 0.005
+    },
+    "fixed_cylinder": {
+      "length_m": 0.011,
+      "diameter_m": 0.0055
+    }
+  }
+}

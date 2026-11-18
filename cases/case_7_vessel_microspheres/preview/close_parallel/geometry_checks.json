@@ -1,0 +1,7 @@
+{
+  "continuous_lumen_gap_lower_bound_mm": 0.49999999999999933,
+  "midpoint_lumen_gap_mm": 0.4999999999999998,
+  "global_minimum_attained_at_midpoints": true,
+  "separate_lumens": true,
+  "method": "Analytic extrema of cubic centerlines on a separating axis, minus constant radii"
+}

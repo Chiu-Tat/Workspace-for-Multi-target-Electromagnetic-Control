@@ -1,0 +1,16 @@
+{
+  "scope": "Whole-box inner-set numerical pilot for uniform axial cylinders and fixed calibrated coil dipoles; conservative analytic tails and Lipschitz enclosures. Float64 without directed rounding; not hardware or machine-verified certification.",
+  "L": 5,
+  "xy_cells": 128,
+  "heading_cells": 128,
+  "cell_width_m": 0.00078125,
+  "heading_width_deg": 2.8125,
+  "total_boxes": 2097152,
+  "domain_valid_boxes": 2004736,
+  "inside_boxes": 120273,
+  "unresolved_valid_boxes": 1884463,
+  "outside_certificates": 0,
+  "inside_fraction_full_search": 0.05735063552856445,
+  "inside_fraction_valid": 0.05999443318222449,
+  "elapsed_seconds": 206.86758883297443
+}

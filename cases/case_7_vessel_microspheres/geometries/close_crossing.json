@@ -1,0 +1,17 @@
+{
+  "description": "Engineered forearm-inspired artery-vein crossing: two separate lumens, with an over-under depth offset; not a patient-specific crossing",
+  "title": "Two vessels crossing at different depths",
+  "units": "mm",
+  "origin_emns_mm": [0, 0, 85],
+  "rotation_local_to_emns": [[1,0,0],[0,1,0],[0,0,1]],
+  "separation_axis": 2,
+  "designed_lumen_gap_mm": 0.35,
+  "branches": {
+    "RA": {"label": "Artery, deeper", "control_points_mm": [[-9,-25,-1.15],[-5,-6,-1.15],[5,6,-1.15],[9,25,-1.15]], "radius_start_mm": 1.15, "radius_end_mm": 1.15, "bulb_amplitude_mm": 0, "bulb_center_s": 0.5, "bulb_width_s": 0.2},
+    "RV": {"label": "Vein, shallower", "control_points_mm": [[9,-25,1.15],[4,-6,1.15],[-4,6,1.15],[-9,25,1.15]], "radius_start_mm": 0.8, "radius_end_mm": 0.8, "bulb_amplitude_mm": 0, "bulb_center_s": 0.5, "bulb_width_s": 0.2}
+  },
+  "illustrative_particles": [
+    {"name":"Sphere 1", "branch":"RA", "s":0.5, "radius_um":50, "target_branch":"RA"},
+    {"name":"Sphere 2", "branch":"RV", "s":0.5, "radius_um":50, "target_branch":"RV"}
+  ]
+}

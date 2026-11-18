@@ -1,0 +1,6 @@
+{
+ "measured_step_out_hz": 6.5,
+ "model_step_out_hz": 6.0,
+ "robot2_max_freq_error_hz": 0.18787353183152433,
+ "max_field_slack_rel": 0.0
+}

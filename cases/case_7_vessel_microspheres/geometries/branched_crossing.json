@@ -1,0 +1,644 @@
+{
+  "description": "Synthetic forearm-inspired vessels with uneven branching, smooth taper, winding paths and rounded junctions; not a patient scan.",
+  "title": "Branched paired vessels: over-under crossing",
+  "units": "mm",
+  "origin_emns_mm": [
+    0,
+    0,
+    85
+  ],
+  "rotation_local_to_emns": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "separation_axis": 2,
+  "branches": {
+    "RA": {
+      "label": "Artery, deeper",
+      "control_points_mm": [
+        [
+          -17.277788443080613,
+          -47.99385678633504,
+          -7.091668266462092
+        ],
+        [
+          -9.598771357267008,
+          -11.51852562872041,
+          -3.6361105778459692
+        ],
+        [
+          9.598771357267008,
+          11.51852562872041,
+          -3.6361105778459692
+        ],
+        [
+          17.277788443080613,
+          47.99385678633504,
+          -7.091668266462092
+        ]
+      ],
+      "radius_start_mm": 2.0,
+      "radius_end_mm": 2.0,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2,
+      "network": "artery",
+      "smooth_taper": true,
+      "waviness_mm": [
+        1.6317911307353912,
+        0.8638894221540306,
+        0.0
+      ],
+      "waviness_phase": 0
+    },
+    "RV": {
+      "label": "Vein, shallower",
+      "control_points_mm": [
+        [
+          17.277788443080613,
+          -47.99385678633504,
+          7.091668266462092
+        ],
+        [
+          7.679017085813606,
+          -11.51852562872041,
+          3.6361105778459692
+        ],
+        [
+          -7.679017085813606,
+          11.51852562872041,
+          3.6361105778459692
+        ],
+        [
+          -17.277788443080613,
+          47.99385678633504,
+          7.091668266462092
+        ]
+      ],
+      "radius_start_mm": 2.0,
+      "radius_end_mm": 2.0,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2,
+      "network": "vein",
+      "smooth_taper": true,
+      "waviness_mm": [
+        1.6317911307353912,
+        0.8638894221540306,
+        0.0
+      ],
+      "waviness_phase": 0.8
+    },
+    "RA_B1": {
+      "label": "Side branch 1",
+      "network": "artery",
+      "parent": "RA",
+      "parent_s": 0.145,
+      "control_points_mm": [
+        [
+          -13.031563716645271,
+          -32.760654597813996,
+          -5.806459973123541
+        ],
+        [
+          -14.586564676522526,
+          -24.870464542140517,
+          -7.015905164139184
+        ],
+        [
+          -24.089348320216864,
+          -26.579045843734043,
+          -10.173900940680028
+        ],
+        [
+          -30.309352159725883,
+          -17.402620426186786,
+          -12.525599923210446
+        ]
+      ],
+      "radius_start_mm": 1.0942599347284387,
+      "radius_end_mm": 0.62372816279521,
+      "smooth_taper": true,
+      "waviness_mm": [
+        0.9598771357267007,
+        0.8638894221540306,
+        0.0
+      ],
+      "waviness_phase": 0.9,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2
+    },
+    "RA_B2": {
+      "label": "Side branch 2",
+      "network": "artery",
+      "parent": "RA",
+      "parent_s": 0.325,
+      "control_points_mm": [
+        [
+          -5.874627798042302,
+          -15.206451084662332,
+          -4.817479362641606
+        ],
+        [
+          -9.157407602227618,
+          -16.012747878672762,
+          -6.545258206949667
+        ],
+        [
+          -29.218839738915666,
+          -2.612863063928018,
+          -11.056680744865162
+        ],
+        [
+          -42.34995895565693,
+          -7.527433998848726,
+          -14.416250719908614
+        ]
+      ],
+      "radius_start_mm": 1.324630447302847,
+      "radius_end_mm": 0.6490689191783949,
+      "smooth_taper": true,
+      "waviness_mm": [
+        0.9598771357267007,
+        0.8638894221540306,
+        0.0
+      ],
+      "waviness_phase": 1.8,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2
+    },
+    "RA_B2_twig": {
+      "label": "Secondary branch",
+      "network": "artery",
+      "parent": "RA_B2",
+      "parent_s": 0.56,
+      "control_points_mm": [
+        [
+          -23.772530600884913,
+          -9.59203353810786,
+          -9.647863697447123
+        ],
+        [
+          -25.621829890575974,
+          -8.110751142254415,
+          -10.209391821847241
+        ],
+        [
+          -32.59226567479613,
+          -7.3681901900562385,
+          -12.325920906124617
+        ],
+        [
+          -37.99790975235462,
+          -12.817220714149574,
+          -13.967310808217276
+        ]
+      ],
+      "radius_start_mm": 0.6911115377232245,
+      "radius_end_mm": 0.4607410251488163,
+      "smooth_taper": true,
+      "waviness_mm": [
+        0.3839508542906803,
+        0.5759262814360204,
+        0.0
+      ],
+      "waviness_phase": 1.4,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2
+    },
+    "RA_B3": {
+      "label": "Side branch 3",
+      "network": "artery",
+      "parent": "RA",
+      "parent_s": 0.61,
+      "control_points_mm": [
+        [
+          3.4831767325784977,
+          9.36783699366553,
+          -4.625436744096765
+        ],
+        [
+          5.902067114609784,
+          19.561732175083094,
+          -6.18043770397402
+        ],
+        [
+          20.684175004800977,
+          24.668278537149142,
+          -10.240717988097964
+        ],
+        [
+          30.359736532926117,
+          34.324642522559756,
+          -13.264330965637072
+        ]
+      ],
+      "radius_start_mm": 1.171050105586575,
+      "radius_end_mm": 0.7143405644078107,
+      "smooth_taper": true,
+      "waviness_mm": [
+        0.9598771357267007,
+        0.8638894221540306,
+        0.0
+      ],
+      "waviness_phase": 2.7,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2
+    },
+    "RA_B3_twig": {
+      "label": "Secondary branch",
+      "network": "artery",
+      "parent": "RA_B3",
+      "parent_s": 0.72,
+      "control_points_mm": [
+        [
+          21.875142484163707,
+          27.486255788061243,
+          -10.558424726435481
+        ],
+        [
+          23.237784066041332,
+          24.48222430409096,
+          -11.06380003839559
+        ],
+        [
+          28.373894643887763,
+          17.33997051257572,
+          -12.968676214245228
+        ],
+        [
+          32.357000806299276,
+          17.004397465925667,
+          -14.44592712612862
+        ]
+      ],
+      "radius_start_mm": 0.6911115377232245,
+      "radius_end_mm": 0.4607410251488163,
+      "smooth_taper": true,
+      "waviness_mm": [
+        0.3839508542906803,
+        0.5759262814360204,
+        0.0
+      ],
+      "waviness_phase": 2.0999999999999996,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2
+    },
+    "RA_B4": {
+      "label": "Side branch 4",
+      "network": "artery",
+      "parent": "RA",
+      "parent_s": 0.805,
+      "control_points_mm": [
+        [
+          11.134779746593292,
+          27.720731004033613,
+          -5.464359761950544
+        ],
+        [
+          17.58515409867672,
+          27.720731004033613,
+          -7.768064887694626
+        ],
+        [
+          22.80688571702997,
+          30.408386984068375,
+          -10.071770013438709
+        ],
+        [
+          26.492813918220502,
+          41.15901090420742,
+          -11.223622576310747
+        ]
+      ],
+      "radius_start_mm": 0.8830869648685647,
+      "radius_end_mm": 0.5740065271645671,
+      "smooth_taper": true,
+      "waviness_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "waviness_phase": 3.6,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2
+    },
+    "RV_B1": {
+      "label": "Tributary 1",
+      "network": "vein",
+      "parent": "RV",
+      "parent_s": 0.235,
+      "control_points_mm": [
+        [
+          10.268531311192957,
+          -23.85851065463804,
+          5.2279996160492015
+        ],
+        [
+          12.514643808793437,
+          -24.5688197350758,
+          6.4374448070648445
+        ],
+        [
+          26.240886849685257,
+          -38.90938414283271,
+          9.59544058360569
+        ],
+        [
+          35.225336840087174,
+          -35.37703628335845,
+          11.947139566136105
+        ]
+      ],
+      "radius_start_mm": 0.9790746784412347,
+      "radius_end_mm": 0.5580725667115037,
+      "smooth_taper": true,
+      "waviness_mm": [
+        0.9598771357267007,
+        0.8638894221540306,
+        0.0
+      ],
+      "waviness_phase": 1.6,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2
+    },
+    "RV_B2": {
+      "label": "Tributary 2",
+      "network": "vein",
+      "parent": "RV",
+      "parent_s": 0.425,
+      "control_points_mm": [
+        [
+          2.3046356690345404,
+          -6.970205701670722,
+          4.558312535995396
+        ],
+        [
+          4.0324145133426015,
+          -3.476252927625531,
+          6.286091380303459
+        ],
+        [
+          14.59106300633631,
+          16.2396234402009,
+          10.79751391821895
+        ],
+        [
+          21.502178383568555,
+          14.147091284316696,
+          14.157083893262403
+        ]
+      ],
+      "radius_start_mm": 1.0942599347284387,
+      "radius_end_mm": 0.536187368016935,
+      "smooth_taper": true,
+      "waviness_mm": [
+        0.9598771357267007,
+        0.8638894221540306,
+        0.0
+      ],
+      "waviness_phase": 2.5,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2
+    },
+    "RV_B2_twig": {
+      "label": "Secondary tributary",
+      "network": "vein",
+      "parent": "RV_B2",
+      "parent_s": 0.56,
+      "control_points_mm": [
+        [
+          11.081761700903135,
+          7.2644901900562315,
+          9.388696870800914
+        ],
+        [
+          12.055077116530011,
+          8.012042503360185,
+          9.950224995201033
+        ],
+        [
+          15.723727529277461,
+          5.9890054521025915,
+          12.066754079478407
+        ],
+        [
+          18.5688033595714,
+          -1.604774544058484,
+          13.708143981571066
+        ]
+      ],
+      "radius_start_mm": 0.5951238241505544,
+      "radius_end_mm": 0.4607410251488163,
+      "smooth_taper": true,
+      "waviness_mm": [
+        0.3839508542906803,
+        0.5759262814360204,
+        0.0
+      ],
+      "waviness_phase": 1.4,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2
+    },
+    "RV_B3": {
+      "label": "Tributary 3",
+      "network": "vein",
+      "parent": "RV",
+      "parent_s": 0.685,
+      "control_points_mm": [
+        [
+          -7.906219447111378,
+          16.127050643118917,
+          4.85479938567866
+        ],
+        [
+          -11.016221366865887,
+          22.02069625648086,
+          6.409800345555915
+        ],
+        [
+          -30.021788654254564,
+          20.81125106546522,
+          10.470080629679858
+        ],
+        [
+          -42.4617963332726,
+          27.645576271839328,
+          13.493693607218967
+        ]
+      ],
+      "radius_start_mm": 0.9214820502976326,
+      "radius_end_mm": 0.562104050681556,
+      "smooth_taper": true,
+      "waviness_mm": [
+        0.9598771357267007,
+        0.8638894221540306,
+        0.0
+      ],
+      "waviness_phase": 3.4000000000000004,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2
+    },
+    "RV_B3_twig": {
+      "label": "Secondary tributary",
+      "network": "vein",
+      "parent": "RV_B3",
+      "parent_s": 0.72,
+      "control_points_mm": [
+        [
+          -30.39255889806338,
+          23.975764196584677,
+          10.787787368017376
+        ],
+        [
+          -32.14452664619176,
+          21.705462795163886,
+          11.293162679977485
+        ],
+        [
+          -38.74809738913717,
+          17.328807007104423,
+          13.198038855827122
+        ],
+        [
+          -43.86923388366626,
+          19.137983432522105,
+          14.675289767710513
+        ]
+      ],
+      "radius_start_mm": 0.5951238241505544,
+      "radius_end_mm": 0.4607410251488163,
+      "smooth_taper": true,
+      "waviness_mm": [
+        0.3839508542906803,
+        0.5759262814360204,
+        0.0
+      ],
+      "waviness_phase": 2.0999999999999996,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2
+    },
+    "RV_B4": {
+      "label": "Tributary 4",
+      "network": "vein",
+      "parent": "RV",
+      "parent_s": 0.9,
+      "control_points_mm": [
+        [
+          -14.210277116530175,
+          37.44162251872048,
+          6.158667690535738
+        ],
+        [
+          -20.660651468613604,
+          37.44162251872048,
+          8.46237281627982
+        ],
+        [
+          -25.882383086966858,
+          38.977425935883204,
+          10.766077942023902
+        ],
+        [
+          -29.56831128815739,
+          45.120639604534084,
+          11.917930504895944
+        ]
+      ],
+      "radius_start_mm": 0.7679017085813606,
+      "radius_end_mm": 0.49913611057788443,
+      "smooth_taper": true,
+      "waviness_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "waviness_phase": 4.3,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2
+    }
+  },
+  "illustrative_particles": [
+    {
+      "name": "Sphere 1",
+      "branch": "RA",
+      "s": 0.5,
+      "radius_um": 50,
+      "target_branch": "RA"
+    },
+    {
+      "name": "Sphere 2",
+      "branch": "RV",
+      "s": 0.5,
+      "radius_um": 50,
+      "target_branch": "RV"
+    }
+  ],
+  "networks": {
+    "artery": {
+      "trunk": "RA",
+      "label": "Arterial network",
+      "color": "#c25362"
+    },
+    "vein": {
+      "trunk": "RV",
+      "label": "Venous network",
+      "color": "#347da5"
+    }
+  },
+  "mesh_step_mm": 0.2,
+  "display_smoothing_max_mm": 0.06,
+  "task_concept": {
+    "sphere_1": {
+      "network": "artery",
+      "target_branch": "RA_B3_twig"
+    },
+    "sphere_2": {
+      "network": "vein",
+      "target_branch": "RV_B2_twig"
+    },
+    "note": "Target labels only; reachability and flow direction are not evaluated."
+  },
+  "uniform_scaling": {
+    "factor_from_original": 1.9197542714534015,
+    "original_y_extent_mm": 52.089999999995996,
+    "target_y_extent_mm": 100,
+    "scaled_quantities": "All local x/y/z dimensions, lumen radii, waviness and bulb amplitudes; registration origin is a placement coordinate."
+  },
+  "main_trunk_pipe": {
+    "outer_diameter_mm": 8.0,
+    "inner_diameter_mm": 4.0,
+    "wall_thickness_mm": 2.0,
+    "ends": "Flat annular faces; both main-trunk bores open at both ends.",
+    "side_branches": "Retain previous exterior sizes; no separate side-branch bores are requested.",
+    "separation_axis": 2,
+    "additional_network_separation_mm": 4.584565175657176,
+    "outer_separating_slab_gap_mm": 1.0,
+    "simulation_radius": "Main-trunk radius fields represent the 2 mm inner lumen radius."
+  }
+}

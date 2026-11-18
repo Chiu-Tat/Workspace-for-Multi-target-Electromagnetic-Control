@@ -1,0 +1,128 @@
+{
+  "source": "Modeling/10 coil data 3D/coil1_to_10_model_accuracy_summary.csv",
+  "n_coils": 10,
+  "samples_per_coil": 477,
+  "test_points_per_coil": 117,
+  "mean_vector_error_mT_across_coils": 0.7464229131817489,
+  "pooled_vector_rmse_mT": 1.0553412509656457,
+  "worst_sample_vector_error_mT": 9.15213105808615,
+  "per_coil": [
+    {
+      "coil": 1,
+      "sample_count": 477.0,
+      "test_point_count": 117.0,
+      "mean_vector_error_mT": 0.806923610535111,
+      "rms_vector_error_mT": 1.151526428169872,
+      "max_vector_error_mT": 6.66980272040875,
+      "bx_rmse_mT": 0.5167050484813043,
+      "by_rmse_mT": 0.8545510623603267,
+      "bz_rmse_mT": 0.5733859864580171
+    },
+    {
+      "coil": 2,
+      "sample_count": 477.0,
+      "test_point_count": 117.0,
+      "mean_vector_error_mT": 0.6222762912938364,
+      "rms_vector_error_mT": 0.8645891044764019,
+      "max_vector_error_mT": 5.007738535259002,
+      "bx_rmse_mT": 0.565407763722999,
+      "by_rmse_mT": 0.3977976527998498,
+      "bz_rmse_mT": 0.5192161474068331
+    },
+    {
+      "coil": 3,
+      "sample_count": 477.0,
+      "test_point_count": 117.0,
+      "mean_vector_error_mT": 0.7998636413099913,
+      "rms_vector_error_mT": 1.0918188432800877,
+      "max_vector_error_mT": 5.040626643934501,
+      "bx_rmse_mT": 0.8656110125770479,
+      "by_rmse_mT": 0.43922736529242307,
+      "bz_rmse_mT": 0.49986526487152855
+    },
+    {
+      "coil": 4,
+      "sample_count": 477.0,
+      "test_point_count": 117.0,
+      "mean_vector_error_mT": 0.7825027140769006,
+      "rms_vector_error_mT": 1.1202656383912812,
+      "max_vector_error_mT": 6.622747271933154,
+      "bx_rmse_mT": 0.5253672957301636,
+      "by_rmse_mT": 0.5482784266971774,
+      "bz_rmse_mT": 0.8236352784794175
+    },
+    {
+      "coil": 5,
+      "sample_count": 477.0,
+      "test_point_count": 117.0,
+      "mean_vector_error_mT": 0.7892583140274939,
+      "rms_vector_error_mT": 1.0974510839912381,
+      "max_vector_error_mT": 5.18032541483029,
+      "bx_rmse_mT": 0.5079475230594361,
+      "by_rmse_mT": 0.743775521093869,
+      "bz_rmse_mT": 0.6270455882891379
+    },
+    {
+      "coil": 6,
+      "sample_count": 477.0,
+      "test_point_count": 117.0,
+      "mean_vector_error_mT": 0.8054954875473436,
+      "rms_vector_error_mT": 1.1164654994261547,
+      "max_vector_error_mT": 7.153758903606092,
+      "bx_rmse_mT": 0.43603067925235833,
+      "by_rmse_mT": 0.7511262683111647,
+      "bz_rmse_mT": 0.7015566885238602
+    },
+    {
+      "coil": 7,
+      "sample_count": 477.0,
+      "test_point_count": 117.0,
+      "mean_vector_error_mT": 0.6500832205322602,
+      "rms_vector_error_mT": 0.9029638797792254,
+      "max_vector_error_mT": 3.9717301204358924,
+      "bx_rmse_mT": 0.3781667288527475,
+      "by_rmse_mT": 0.3814701200076612,
+      "bz_rmse_mT": 0.7258197027610264
+    },
+    {
+      "coil": 8,
+      "sample_count": 477.0,
+      "test_point_count": 117.0,
+      "mean_vector_error_mT": 0.7062759215335384,
+      "rms_vector_error_mT": 1.0045693873273074,
+      "max_vector_error_mT": 7.198301971334168,
+      "bx_rmse_mT": 0.39150814876133355,
+      "by_rmse_mT": 0.5902795801126202,
+      "bz_rmse_mT": 0.7123559789253575
+    },
+    {
+      "coil": 9,
+      "sample_count": 477.0,
+      "test_point_count": 117.0,
+      "mean_vector_error_mT": 0.7814688844280514,
+      "rms_vector_error_mT": 1.13445453843428,
+      "max_vector_error_mT": 9.15213105808615,
+      "bx_rmse_mT": 0.4641235865959002,
+      "by_rmse_mT": 0.5276899296081702,
+      "bz_rmse_mT": 0.8905727001933179
+    },
+    {
+      "coil": 10,
+      "sample_count": 477.0,
+      "test_point_count": 117.0,
+      "mean_vector_error_mT": 0.7200810465329618,
+      "rms_vector_error_mT": 1.0268768296952615,
+      "max_vector_error_mT": 5.25796122489923,
+      "bx_rmse_mT": 0.5181925729384077,
+      "by_rmse_mT": 0.5001654612847258,
+      "bz_rmse_mT": 0.7319747209120692
+    }
+  ],
+  "unavailable": [
+    "probe uncertainty",
+    "registration uncertainty",
+    "gradient measurements",
+    "fitting/validation split in the summary CSV"
+  ],
+  "evidence_status": "measured coil-field residuals from archived summary; not gradient or interaction validation"
+}

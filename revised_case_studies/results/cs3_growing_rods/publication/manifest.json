@@ -1,0 +1,493 @@
+{
+  "date": "2026-10-06",
+  "case": "Selective magnetic adjustment of scaled dual growing rods",
+  "hardware_status": "No new hardware or clinical measurements.",
+  "anatomical_illustration": {
+    "asset": "revised_case_studies/cs3_growing_rods/assets/spine_posterior_curved.png",
+    "provenance": "Built-in image_gen illustration, not a patient scan or scanned mesh.",
+    "prompt_file": "revised_case_studies/cs3_growing_rods/assets/spine_curved_prompt.md",
+    "shape": "Gentle lateral S curve; does not alter parallel actuator geometry or model calculations.",
+    "model_use": "None; illustrative anatomical context only."
+  },
+  "source_sha256": {
+    "revised_case_studies/cs3_growing_rods/publication.py": "2bd9614326f13012d0c2190f446c34f447e32709c137e9c37ea7a15a67c436f1",
+    "revised_case_studies/cs3_growing_rods/model.py": "acd51770125817089eb60f2c15f485a6f16a38b681ae39f9e1b527a5041988e8",
+    "revised_case_studies/cs3_growing_rods/config.py": "31033f552cd4ccde47a23c2f453da3fb38a277f33f34ed247e25d745b613b41b",
+    "cases/case_7_vessel_microspheres/magnetics.py": "0ef71dcf71025ab183bf5fa0fb74e9a339157ab3d5ebbf4af2ae3ff2bdc903f8",
+    "emns/workspace/fast.py": "ffbbe427c5c32cf1d0f4c0f1df79166dfe3d4cb054c8bd61cab826eec1b314a8",
+    "revised_case_studies/cs2_vessel_microspheres/model.py": "d5bc957d6a1e4ba922867996864026ae510b6ad4da2c2754d46e95411f829f34",
+    "revised_case_studies/cs3_growing_rods/assets/spine_posterior_illustration.png": "93c5aed9ee985f44d92280c1a131970274828cd583a5bea3a0eae5965fe7b2ca",
+    "revised_case_studies/cs3_growing_rods/assets/spine_prompt.md": "6a9f4a4e831d0b06ec26d5607cf293cd5eaf07dcfbafb0539fa0872af2d04e85",
+    "revised_case_studies/cs3_growing_rods/assets/spine_posterior_curved.png": "cfe573cb318a7dbf2e95a43828ba8acf32ff7d85cf06f72fe40a719cbaf4c9e2",
+    "revised_case_studies/cs3_growing_rods/assets/spine_curved_prompt.md": "53e45e555969ee2577a3f8a137ab681d8f73f8ea227a53a9da5987ad05a24449"
+  },
+  "coil_parameters": [
+    [
+      -13.04945069,
+      -4.41557229,
+      6.47376799,
+      0.12129096,
+      0.00466922,
+      0.0675158
+    ],
+    [
+      -5.10083416,
+      13.54294901,
+      7.85474539,
+      0.05834654,
+      -0.11165548,
+      0.06649454
+    ],
+    [
+      4.05088788,
+      14.23365818,
+      6.44760956,
+      -0.05903076,
+      -0.11020417,
+      0.07011756
+    ],
+    [
+      13.89011305,
+      -0.06092074,
+      4.77365608,
+      -0.12306086,
+      -0.00085745,
+      0.07121839
+    ],
+    [
+      11.44363813,
+      -9.40543896,
+      4.46367162,
+      -0.06806179,
+      0.1024875,
+      0.07102848
+    ],
+    [
+      -9.00577939,
+      -12.78905365,
+      5.98650851,
+      0.06473315,
+      0.10618968,
+      0.0698828
+    ],
+    [
+      0.92820081,
+      8.54965337,
+      8.72298349,
+      -0.00381254,
+      -0.08845466,
+      -0.00374662
+    ],
+    [
+      8.7302819,
+      -4.90773115,
+      7.00109937,
+      -0.07977306,
+      0.04481733,
+      -0.00036032
+    ],
+    [
+      -7.68962762,
+      -6.83258326,
+      8.12112247,
+      0.07498008,
+      0.04542436,
+      -0.00196975
+    ],
+    [
+      2.35614001,
+      -1.11370036,
+      14.00304846,
+      -0.00722183,
+      0.00029277,
+      -0.03982979
+    ]
+  ],
+  "settings": {
+    "MOMENT": 0.04,
+    "ROTOR_RADIUS": 0.003,
+    "I_LIMIT": 15.0,
+    "B_ROT": 0.015,
+    "HOLD_EPS": 0.0003,
+    "FORCE_LIMIT": 0.15,
+    "GEAR_RATIO": 64.0,
+    "GEAR_EFFICIENCY": 0.5,
+    "SCREW_EFFICIENCY": 0.3,
+    "LEAD_PITCH": 0.0005,
+    "LOAD": 2.0,
+    "FRICTION": 1e-05,
+    "ROT_DRAG": 2e-05,
+    "FREQ": 0.5,
+    "DT_CTRL": 0.02,
+    "DT_PLANT": 0.001,
+    "PHASE_SEQUENCE": [
+      [
+        32.0,
+        [
+          0.5,
+          0.0
+        ]
+      ],
+      [
+        32.0,
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      [
+        32.0,
+        [
+          0.5,
+          0.25
+        ]
+      ],
+      [
+        16.0,
+        [
+          -0.5,
+          0.0
+        ]
+      ]
+    ]
+  },
+  "validation": {
+    "point_checks": [
+      {
+        "placement": "P1",
+        "maximum_facet_LP_discrepancy_T": 1.3877787807814457e-17,
+        "phase_samples_per_task": 32,
+        "capacity_LP_contradictions": 0,
+        "probe_command_LP_checks": 400,
+        "probe_command_LP_contradictions": 0,
+        "force_safe_sample_max_N": 0.04888897898963259,
+        "force_safe_current_limit_A": 8.363833479900745,
+        "force_safe_box_exists": true
+      },
+      {
+        "placement": "P2",
+        "maximum_facet_LP_discrepancy_T": 8.673617379884035e-17,
+        "phase_samples_per_task": 32,
+        "capacity_LP_contradictions": 0,
+        "probe_command_LP_checks": 400,
+        "probe_command_LP_contradictions": 0,
+        "force_safe_sample_max_N": 0.05345069438379951,
+        "force_safe_current_limit_A": 6.3207633363274445,
+        "force_safe_box_exists": true
+      },
+      {
+        "placement": "P3",
+        "maximum_facet_LP_discrepancy_T": 3.9898639947466563e-17,
+        "phase_samples_per_task": 32,
+        "capacity_LP_contradictions": 0,
+        "probe_command_LP_checks": 400,
+        "probe_command_LP_contradictions": 0,
+        "force_safe_sample_max_N": 0.2312587466208618,
+        "force_safe_current_limit_A": 0.0,
+        "force_safe_box_exists": false
+      }
+    ],
+    "independent_convex_hull_radius_T": 0.06326584525967135,
+    "facet_radius_T": 0.0632658452596714,
+    "phase_lock_torque_margin_Nm": 0.0005105895070227983,
+    "scope": "Pointwise floating-point/model checks. No outward-rounded placement-region or physical certificate."
+  },
+  "run_summary": {
+    "selective": {
+      "placement_mm": [
+        40.0,
+        0.0,
+        55.0
+      ],
+      "method": "selective",
+      "duration_s": 111.99999999999486,
+      "holding_intervals": [
+        {
+          "segment": 0,
+          "held_rotor": 1,
+          "maximum_length_change_mm": 0.0
+        },
+        {
+          "segment": 1,
+          "held_rotor": 0,
+          "maximum_length_change_mm": 0.0
+        },
+        {
+          "segment": 3,
+          "held_rotor": 1,
+          "maximum_length_change_mm": 0.0
+        }
+      ],
+      "maximum_held_length_change_mm": 0.0,
+      "final_lengths_mm": [
+        0.18772700888561625,
+        0.18735895466528754
+      ],
+      "reference_final_lengths_mm": [
+        0.18750000000000733,
+        0.18749999999999448
+      ],
+      "inexact_allocation_samples": 0,
+      "peak_current_A": 8.66918787277968,
+      "maximum_field_component_error_T": 2.6020852139652106e-17,
+      "maximum_between_update_hold_field_T": 7.560327961900126e-06,
+      "maximum_predicted_force_N": 0.04291602450794631,
+      "load_torque_Nm": 1.6578639905405766e-05,
+      "static_torque_threshold_Nm": 2.6578639905405765e-05
+    },
+    "common": {
+      "placement_mm": [
+        40.0,
+        0.0,
+        55.0
+      ],
+      "method": "common",
+      "duration_s": 111.99999999999486,
+      "holding_intervals": [
+        {
+          "segment": 0,
+          "held_rotor": 1,
+          "maximum_length_change_mm": 0.12469474784439528
+        },
+        {
+          "segment": 1,
+          "held_rotor": 0,
+          "maximum_length_change_mm": 0.12492189570660707
+        },
+        {
+          "segment": 3,
+          "held_rotor": 1,
+          "maximum_length_change_mm": 0.062045704275558666
+        }
+      ],
+      "maximum_held_length_change_mm": 0.12492189570660707,
+      "final_lengths_mm": [
+        0.31272714786222316,
+        0.31272714786222316
+      ],
+      "reference_final_lengths_mm": [
+        0.18750000000000733,
+        0.18749999999999448
+      ],
+      "inexact_allocation_samples": 0,
+      "peak_current_A": 2.8466744874749224,
+      "maximum_field_component_error_T": 8.673617379884035e-18,
+      "maximum_between_update_hold_field_T": 0.0,
+      "maximum_predicted_force_N": 0.011112850701368875,
+      "load_torque_Nm": 1.6578639905405766e-05,
+      "static_torque_threshold_Nm": 2.6578639905405765e-05
+    }
+  },
+  "probe_summary": {
+    "P1": {
+      "selective": {
+        "placement_mm": [
+          40.0,
+          0.0,
+          55.0
+        ],
+        "method": "selective",
+        "duration_s": 4.000000000000003,
+        "holding_intervals": [
+          {
+            "segment": 0,
+            "held_rotor": 1,
+            "maximum_length_change_mm": 0.0
+          }
+        ],
+        "maximum_held_length_change_mm": 0.0,
+        "final_lengths_mm": [
+          0.015397991114390898,
+          0.0
+        ],
+        "reference_final_lengths_mm": [
+          0.015624999999999946,
+          0.0
+        ],
+        "inexact_allocation_samples": 0,
+        "peak_current_A": 5.8674036012765844,
+        "maximum_field_component_error_T": 1.5612511283791264e-17,
+        "maximum_between_update_hold_field_T": 7.560327961893965e-06,
+        "maximum_predicted_force_N": 0.024850366357865344,
+        "load_torque_Nm": 1.6578639905405766e-05,
+        "static_torque_threshold_Nm": 2.6578639905405765e-05
+      },
+      "common": {
+        "placement_mm": [
+          40.0,
+          0.0,
+          55.0
+        ],
+        "method": "common",
+        "duration_s": 4.000000000000003,
+        "holding_intervals": [
+          {
+            "segment": 0,
+            "held_rotor": 1,
+            "maximum_length_change_mm": 0.015397852137790427
+          }
+        ],
+        "maximum_held_length_change_mm": 0.015397852137790427,
+        "final_lengths_mm": [
+          0.015397852137790427,
+          0.015397852137790427
+        ],
+        "reference_final_lengths_mm": [
+          0.015624999999999946,
+          0.0
+        ],
+        "inexact_allocation_samples": 0,
+        "peak_current_A": 2.8466744874741168,
+        "maximum_field_component_error_T": 6.938893903907228e-18,
+        "maximum_between_update_hold_field_T": 0.0,
+        "maximum_predicted_force_N": 0.010917572409734523,
+        "load_torque_Nm": 1.6578639905405766e-05,
+        "static_torque_threshold_Nm": 2.6578639905405765e-05
+      }
+    },
+    "P2": {
+      "selective": {
+        "placement_mm": [
+          12.62199012144161,
+          0.0,
+          55.0
+        ],
+        "method": "selective",
+        "duration_s": 4.000000000000003,
+        "holding_intervals": [
+          {
+            "segment": 0,
+            "held_rotor": 1,
+            "maximum_length_change_mm": 0.0
+          }
+        ],
+        "maximum_held_length_change_mm": 0.0,
+        "final_lengths_mm": [
+          0.015397991114390894,
+          0.0
+        ],
+        "reference_final_lengths_mm": [
+          0.015624999999999946,
+          0.0
+        ],
+        "inexact_allocation_samples": 0,
+        "peak_current_A": 14.999999999740728,
+        "maximum_field_component_error_T": 1.1246862816061132e-14,
+        "maximum_between_update_hold_field_T": 0.00024062298025183385,
+        "maximum_predicted_force_N": 0.11141823782899216,
+        "load_torque_Nm": 1.6578639905405766e-05,
+        "static_torque_threshold_Nm": 2.6578639905405765e-05
+      },
+      "common": {
+        "placement_mm": [
+          12.62199012144161,
+          0.0,
+          55.0
+        ],
+        "method": "common",
+        "duration_s": 4.000000000000003,
+        "holding_intervals": [
+          {
+            "segment": 0,
+            "held_rotor": 1,
+            "maximum_length_change_mm": 0.015393586811388818
+          }
+        ],
+        "maximum_held_length_change_mm": 0.015393586811388818,
+        "final_lengths_mm": [
+          0.015393586811388818,
+          0.015393586811388818
+        ],
+        "reference_final_lengths_mm": [
+          0.015624999999999946,
+          0.0
+        ],
+        "inexact_allocation_samples": 0,
+        "peak_current_A": 2.8975353074560664,
+        "maximum_field_component_error_T": 1.0408340855860843e-17,
+        "maximum_between_update_hold_field_T": 0.0,
+        "maximum_predicted_force_N": 0.037560807269719686,
+        "load_torque_Nm": 1.6578639905405766e-05,
+        "static_torque_threshold_Nm": 2.6578639905405765e-05
+      }
+    },
+    "P3": {
+      "selective": {
+        "placement_mm": [
+          8.0,
+          0.0,
+          55.0
+        ],
+        "method": "selective",
+        "duration_s": 4.000000000000003,
+        "holding_intervals": [
+          {
+            "segment": 0,
+            "held_rotor": 1,
+            "maximum_length_change_mm": 0.00036963984784846483
+          }
+        ],
+        "maximum_held_length_change_mm": 0.00036963984784846483,
+        "final_lengths_mm": [
+          -0.0002270065844340588,
+          0.00036963984784846483
+        ],
+        "reference_final_lengths_mm": [
+          0.015624999999999946,
+          0.0
+        ],
+        "inexact_allocation_samples": 103,
+        "peak_current_A": 14.999999999911989,
+        "maximum_field_component_error_T": 0.013536822607540102,
+        "maximum_between_update_hold_field_T": 0.00459842941166932,
+        "maximum_predicted_force_N": 0.3094699376228363,
+        "load_torque_Nm": 1.6578639905405766e-05,
+        "static_torque_threshold_Nm": 2.6578639905405765e-05
+      },
+      "common": {
+        "placement_mm": [
+          8.0,
+          0.0,
+          55.0
+        ],
+        "method": "common",
+        "duration_s": 4.000000000000003,
+        "holding_intervals": [
+          {
+            "segment": 0,
+            "held_rotor": 1,
+            "maximum_length_change_mm": 0.015380943938544549
+          }
+        ],
+        "maximum_held_length_change_mm": 0.015380943938544549,
+        "final_lengths_mm": [
+          0.015380943938544549,
+          0.015380943938544549
+        ],
+        "reference_final_lengths_mm": [
+          0.015624999999999946,
+          0.0
+        ],
+        "inexact_allocation_samples": 0,
+        "peak_current_A": 3.8930112821856167,
+        "maximum_field_component_error_T": 1.214306433183765e-17,
+        "maximum_between_update_hold_field_T": 0.0,
+        "maximum_predicted_force_N": 0.2343868528482495,
+        "load_torque_Nm": 1.6578639905405766e-05,
+        "static_torque_threshold_Nm": 2.6578639905405765e-05
+      }
+    }
+  },
+  "limitations": [
+    "Pointwise floating-point facet containment, no continuous placement boxes or outward rounding.",
+    "Plotted zero radius includes placements with no robust zero-field task; it does not certify zero commands.",
+    "All-phase moment discs enclose actual phase circles; current recourse assumes measured phases.",
+    "Force-safe variant uses a uniformly derated current box: a sufficient lower bound, not optimized hybrid capacity.",
+    "Primary motion arms use full 15 A field-only limits; they do not enforce the 0.15 N sensitivity bound.",
+    "No thermal, power, slew, rotor inertia, backlash, axial motion of rotor centres, or fixture magnetization model.",
+    "Fixed rotor centres and axes; constant bidirectional bench load and dry friction, no spinal tissue model.",
+    "50 Hz null-field hold at allocation updates does not guarantee continuous null fields; inter-update values logged.",
+    "P3 is an artificial small-spacing stress placement; coil height is not skin-to-implant depth.",
+    "Reverse sequence concerns bench reversibility only; no clinical treatment claim."
+  ]
+}

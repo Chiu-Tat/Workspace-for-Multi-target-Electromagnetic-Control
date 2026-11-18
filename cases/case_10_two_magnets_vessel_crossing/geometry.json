@@ -1,0 +1,142 @@
+{
+  "description": "Bench-scale over-under vessel crossing for two permanent-magnet robots. The centerline shape is the Case 7 close_crossing preset rescaled by the design block; it is not a patient reconstruction.",
+  "title": "Two vessels crossing at different depths (resized)",
+  "units": "mm",
+  "origin_emns_mm": [
+    0.0,
+    0.0,
+    85.0
+  ],
+  "rotation_local_to_emns": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "separation_axis": 2,
+  "design": {
+    "route_length_mm": 30.0,
+    "lateral_half_spread_mm": 6.0,
+    "depth_gap_mm": 4.0,
+    "lumen_diameter_mm": {
+      "RA": 3.2,
+      "RV": 2.8
+    },
+    "shape_y": [
+      -1.0,
+      -0.24,
+      0.24,
+      1.0
+    ],
+    "shape_x": {
+      "RA": [
+        -1.0,
+        -0.5555555555555556,
+        0.5555555555555556,
+        1.0
+      ],
+      "RV": [
+        1.0,
+        0.4444444444444444,
+        -0.4444444444444444,
+        -1.0
+      ]
+    },
+    "source_preset": "cases/case_7_vessel_microspheres/geometries/close_crossing.json"
+  },
+  "designed_lumen_gap_mm": 1.0,
+  "crossing_center_distance_mm": 4.0,
+  "branches": {
+    "RA": {
+      "label": "Artery-side route, deeper",
+      "control_points_mm": [
+        [
+          -6.0,
+          -15.0,
+          -2.0
+        ],
+        [
+          -3.3333333333333335,
+          -3.5999999999999996,
+          -2.0
+        ],
+        [
+          3.3333333333333335,
+          3.5999999999999996,
+          -2.0
+        ],
+        [
+          6.0,
+          15.0,
+          -2.0
+        ]
+      ],
+      "radius_start_mm": 1.6,
+      "radius_end_mm": 1.6,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2
+    },
+    "RV": {
+      "label": "Vein-side route, shallower",
+      "control_points_mm": [
+        [
+          6.0,
+          -15.0,
+          2.0
+        ],
+        [
+          2.6666666666666665,
+          -3.5999999999999996,
+          2.0
+        ],
+        [
+          -2.6666666666666665,
+          3.5999999999999996,
+          2.0
+        ],
+        [
+          -6.0,
+          15.0,
+          2.0
+        ]
+      ],
+      "radius_start_mm": 1.4,
+      "radius_end_mm": 1.4,
+      "bulb_amplitude_mm": 0.0,
+      "bulb_center_s": 0.5,
+      "bulb_width_s": 0.2
+    }
+  },
+  "magnets": [
+    {
+      "name": "magnet 1",
+      "branch": "RA",
+      "diameter_mm": 2.0,
+      "remanence_T": 1.2,
+      "density_kg_m3": 7500.0,
+      "start_s": 0.05,
+      "target_s": 0.95
+    },
+    {
+      "name": "magnet 2",
+      "branch": "RV",
+      "diameter_mm": 2.0,
+      "remanence_T": 1.2,
+      "density_kg_m3": 7500.0,
+      "start_s": 0.05,
+      "target_s": 0.95
+    }
+  ]
+}

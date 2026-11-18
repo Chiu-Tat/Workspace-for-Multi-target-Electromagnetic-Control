@@ -1,0 +1,9 @@
+# Preserve the original geometry and CAD bytes used in validation hashes.
+cases/case_7_vessel_microspheres/geometries/branched_parallel.json -text whitespace=-blank-at-eol
+cases/case_7_vessel_microspheres/geometries/branched_crossing.json -text whitespace=-blank-at-eol
+revised_case_studies/cs2_vessel_microspheres/cad/*.step -text whitespace=-blank-at-eol
+
+# Retain the source bytes used in the archived cylinder-map provenance.
+emns/workspace/affine.py -text whitespace=-blank-at-eol
+emns/workspace/fast.py -text whitespace=-blank-at-eol
+cases/case_6_interaction_obstacle_avoidance/workspace_hybrid.py -text whitespace=-blank-at-eol

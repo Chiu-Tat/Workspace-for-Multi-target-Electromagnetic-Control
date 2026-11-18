@@ -1,0 +1,36 @@
+{
+  "time_s": 35.300000000000004,
+  "pose_a": [
+    0.048597333491126236,
+    0.05937889037262388
+  ],
+  "results": [
+    {
+      "condition": "recorded_motion_command",
+      "force_command_N": [
+        0.00029457571290368193,
+        -0.0004599773462487189
+      ],
+      "command_class": "infeasible",
+      "scaled_force_residual": 0.5572264546794202,
+      "maximum_field_error_T": 3.469446951953614e-18,
+      "maximum_transverse_component_N": 0.0009999999999959698,
+      "solver_status": "optimal"
+    },
+    {
+      "condition": "unattainable_task_corner",
+      "force_command_N": [
+        0.0005,
+        -0.0005
+      ],
+      "command_class": "infeasible",
+      "scaled_force_residual": 0.9757511316829275,
+      "maximum_field_error_T": 6.227657278756737e-16,
+      "maximum_transverse_component_N": 0.0009999999998848038,
+      "solver_status": "optimal"
+    }
+  ],
+  "logged_pose_full_task_class": "infeasible",
+  "probe_force_scale": 1.0,
+  "scope": "Numerical allocator behavior at a logged direct-arm pose; the recorded command may itself be LP-infeasible there. Not hardware validation."
+}

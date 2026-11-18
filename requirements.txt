@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+cvxpy
+PyYAML
+opencv-python
+Pillow
+pytest

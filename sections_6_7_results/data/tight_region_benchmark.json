@@ -1,0 +1,129 @@
+{
+  "protocol": {
+    "initial_xy_m": [
+      -0.05,
+      0.05
+    ],
+    "paper_plane_z_m": -0.01,
+    "coil_model_z_m": 0.075,
+    "coordinate_origin_offset_m": 0.085,
+    "current_A": [
+      -15.0,
+      15.0
+    ],
+    "task_box_T": {
+      "Bx": [
+        -0.12,
+        0.12
+      ],
+      "By": [
+        -0.04,
+        0.04
+      ]
+    },
+    "eps_m": 0.002,
+    "case": "anisotropic Fig. 12 stress case"
+  },
+  "interval_original": {
+    "mode": "interval_original",
+    "eps_m": 0.002,
+    "elapsed_s": 22.806228971108794,
+    "iterations": 5401,
+    "counts": {
+      "inside": 469,
+      "outside": 55,
+      "undetermined": 3527
+    },
+    "areas_m2": {
+      "inside": 0.0012548828125,
+      "outside": 0.00013427734374999996,
+      "undetermined": 0.00861083984375
+    },
+    "area_fractions": {
+      "inside": 0.12548828125,
+      "outside": 0.013427734374999995,
+      "undetermined": 0.8610839843750001
+    },
+    "certificate_counts": {
+      "rohn": 469,
+      "contractor": 55
+    }
+  },
+  "affine_original": {
+    "mode": "affine_original",
+    "eps_m": 0.002,
+    "elapsed_s": 22.062079738941975,
+    "iterations": 4517,
+    "counts": {
+      "inside": 695,
+      "outside": 276,
+      "undetermined": 2417
+    },
+    "areas_m2": {
+      "inside": 0.0032128906250000005,
+      "outside": 0.0008862304687499999,
+      "undetermined": 0.005900878906250001
+    },
+    "area_fractions": {
+      "inside": 0.3212890625,
+      "outside": 0.08862304687499997,
+      "undetermined": 0.590087890625
+    },
+    "certificate_counts": {
+      "rohn": 695,
+      "contractor": 276
+    }
+  },
+  "affine_hybrid": {
+    "mode": "affine_hybrid",
+    "eps_m": 0.002,
+    "elapsed_s": 56.75717465009075,
+    "iterations": 3933,
+    "counts": {
+      "inside": 602,
+      "outside": 861,
+      "undetermined": 1487
+    },
+    "areas_m2": {
+      "inside": 0.004055175781250001,
+      "outside": 0.002314453125,
+      "undetermined": 0.0036303710937500007
+    },
+    "area_fractions": {
+      "inside": 0.405517578125,
+      "outside": 0.23144531249999997,
+      "undetermined": 0.363037109375
+    },
+    "certificate_counts": {
+      "affine_right_inverse": 434,
+      "rohn": 168,
+      "contractor": 276,
+      "dual_separation": 585
+    }
+  },
+  "standard_to_affine_unresolved_area_relative_reduction": 0.3147150552877801,
+  "affine_to_hybrid_unresolved_area_relative_reduction": 0.38477451386015726,
+  "standard_to_hybrid_unresolved_area_relative_reduction": 0.5783952367451093,
+  "affine_to_hybrid_box_evaluation_relative_reduction": 0.12928935133938457,
+  "affine_to_hybrid_runtime_ratio": 2.572612161758628,
+  "affine_hybrid_pointwise_cross_check": {
+    "nodes_per_axis": 3,
+    "terminal_boxes": {
+      "inside": 602,
+      "outside": 861
+    },
+    "sampled_points": {
+      "inside": 5418,
+      "outside": 7749
+    },
+    "pointwise_failures": {
+      "inside": 0,
+      "outside": 0
+    },
+    "first_failures": {
+      "inside": [],
+      "outside": []
+    },
+    "interpretation": "regression cross-check only; not a continuous-region proof"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "cases": [
+    {
+      "name": "weak_interaction",
+      "points_coil": [
+        {
+          "X": 0.02,
+          "Y": 0.02,
+          "Z": 0.05500000000000001,
+          "m": 0.2,
+          "alpha": 1.5707963267948966,
+          "beta": 1.5707963267948966,
+          "Bx": true,
+          "By": null,
+          "Bz": null,
+          "Bx_dx": null,
+          "Bx_dy": null,
+          "Bx_dz": null,
+          "By_dy": null,
+          "By_dz": null,
+          "fx": null,
+          "fy": null,
+          "fz": null,
+          "tx": null,
+          "ty": null,
+          "tz": null
+        },
+        {
+          "X": -0.01,
+          "Y": -0.01,
+          "Z": 0.085,
+          "m": 0.5,
+          "alpha": 1.5707963267948966,
+          "beta": 1.5707963267948966,
+          "Bx": true,
+          "By": null,
+          "Bz": null,
+          "Bx_dx": null,
+          "Bx_dy": null,
+          "Bx_dz": null,
+          "By_dy": null,
+          "By_dz": null,
+          "fx": null,
+          "fy": null,
+          "fz": null,
+          "tx": null,
+          "ty": null,
+          "tz": null
+        }
+      ],
+      "offset_on_T": [
+        0.00035638902076177374,
+        0.0001425556083047095
+      ],
+      "offset_off_T": [
+        0.0,
+        0.0
+      ],
+      "translation_T": [
+        0.00035638902076177374,
+        0.0001425556083047095
+      ],
+      "full_set_translation_max_error_T": 0.0
+    },
+    {
+      "name": "strong_interaction",
+      "points_coil": [
+        {
+          "X": 0.0,
+          "Y": 0.01,
+          "Z": 0.085,
+          "m": 0.2,
+          "alpha": -1.0471975511965976,
+          "beta": 0.7853981633974483,
+          "Bx": true,
+          "By": null,
+          "Bz": null,
+          "Bx_dx": null,
+          "Bx_dy": null,
+          "Bx_dz": null,
+          "By_dy": null,
+          "By_dz": null,
+          "fx": null,
+          "fy": null,
+          "fz": null,
+          "tx": null,
+          "ty": null,
+          "tz": null
+        },
+        {
+          "X": 0.0,
+          "Y": 0.01,
+          "Z": 0.07500000000000001,
+          "m": 0.3,
+          "alpha": 1.0471975511965976,
+          "beta": 0.5235987755982988,
+          "Bx": true,
+          "By": null,
+          "Bz": null,
+          "Bx_dx": null,
+          "Bx_dy": null,
+          "Bx_dz": null,
+          "By_dy": null,
+          "By_dz": null,
+          "fx": null,
+          "fy": null,
+          "fz": null,
+          "tx": null,
+          "ty": null,
+          "tz": null
+        }
+      ],
+      "offset_on_T": [
+        -0.022499993250001387,
+        0.012247445039682035
+      ],
+      "offset_off_T": [
+        0.0,
+        0.0
+      ],
+      "translation_T": [
+        -0.022499993250001387,
+        0.012247445039682035
+      ],
+      "full_set_translation_max_error_T": 0.0
+    }
+  ],
+  "elapsed_s": 0.21634216600796208,
+  "run_id": "1789487776576686000"
+}
