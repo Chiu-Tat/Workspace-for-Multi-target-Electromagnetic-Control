@@ -7,6 +7,22 @@ The code models a shared ten-coil system under bounded currents. The actuation-f
 <img src="images/EM%20machine(1).png" alt="Photograph of the ten-coil system" width="220">
 <img src="images/EMS3.png" alt="Coil system diagram" width="420">
 
+## Task-feasible workspace results
+
+The ten-coil benchmark maps a 100 × 100 mm plane. The field task requires every combination of `Bx` in ±120 mT and `By` in ±40 mT.
+
+### Classifier comparison at 1 mm
+
+With the per-coil current limit set to ±15 A, the affine recourse and dual tests reduced the unresolved area from **69.57% to 13.54%** compared with the interval baseline. They classified **44.13%** of the search area as inside the TFW and **42.33%** as outside. [Benchmark data](revision_analysis/tight_region_benchmark_1mm.json)
+
+![Three TFW maps at 1 mm. The unresolved area shrinks from 69.57% with interval enclosures to 46.09% with affine enclosures and 13.54% with the recourse and dual tests.](sections_6_7_results/figures/tight_region_benchmark_1mm.png)
+
+### Effect of the coil current limit
+
+At 2 mm, the classifier placed the entire search area outside the TFW at ±5 A and ±10 A per coil. At ±15 A, it placed **40.55%** of the area inside. [Current-limit study data](sections_6_7_results/data/study_7_3_summary.json)
+
+![Three TFW maps at 2 mm. The search area is entirely outside at ±5 A and ±10 A. At ±15 A, four regions are classified inside.](sections_6_7_results/figures/current_limit_tfw.png)
+
 ## Setup
 
 Use Python 3.12 and run the commands from the repository root.
